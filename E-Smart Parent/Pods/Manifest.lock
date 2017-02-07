@@ -26,6 +26,7 @@ PODS:
     - GoogleInterchangeUtilities (~> 1.2)
     - GoogleSymbolUtilities (~> 1.1)
     - GoogleToolboxForMac/Logger (~> 2.1)
+  - FontAwesome.swift (1.0.0)
   - GoogleInterchangeUtilities (1.2.2):
     - GoogleSymbolUtilities (~> 1.1)
   - GoogleSymbolUtilities (1.1.2)
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - Charts/Realm
   - Firebase/Core
   - Firebase/Messaging
+  - FontAwesome.swift
   - MBCalendarKit
   - PDTSimpleCalendar (~> 0.9.1)
   - SwiftyJSON
@@ -60,6 +62,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 03da1cb32615569bbc2830a22f9ad753d9a02ef5
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
   FirebaseMessaging: acf66347e43c5637c697060c3001d25c809a4131
+  FontAwesome.swift: 2d32a3d62195343c2004b7c9043294ed2948553a
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
@@ -69,6 +72,6 @@ SPEC CHECKSUMS:
   RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: 5f713b08f7ae7e75f5baa1f1a674c16a63b7075e
+PODFILE CHECKSUM: dfd8e673ea3dbf2d6b23bc96d8b1db99e4b7dcc4
 
 COCOAPODS: 1.1.1

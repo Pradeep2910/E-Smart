@@ -8,7 +8,7 @@
 			<key>itemName</key>
 			<string>Messages</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-calendar</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -23,7 +23,7 @@
 			<key>itemName</key>
 			<string>Attendance</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-calendar</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -38,7 +38,7 @@
 			<key>itemName</key>
 			<string>Calendar</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-calendar</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -53,7 +53,7 @@
 			<key>itemName</key>
 			<string>Circulars</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-list-ul</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -68,7 +68,7 @@
 			<key>itemName</key>
 			<string>Fees</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-dollar</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -83,7 +83,7 @@
 			<key>itemName</key>
 			<string>Tracking</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-bus</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -98,7 +98,7 @@
 			<key>itemName</key>
 			<string>Homeworks</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-calendar</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -113,7 +113,7 @@
 			<key>itemName</key>
 			<string>Exam Results</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-calendar</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -128,7 +128,7 @@
 			<key>itemName</key>
 			<string>Time Table</string>
 			<key>imageName</key>
-			<string></string>
+			<string>fa-calendar</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>

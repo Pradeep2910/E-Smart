@@ -13,6 +13,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Messaging'
 pod 'SwiftyJSON'
 pod 'Charts/Realm'
+pod 'FontAwesome.swift'
   target 'E-Smart ParentTests' do
     inherit! :search_paths
     # Pods for testing

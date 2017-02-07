@@ -194,7 +194,7 @@ extension ConversationDetailsViewController{
     func sendMessageAPI(){
         var jsonParams: [String : AnyObject] = [String : AnyObject]()
         jsonParams["schoolId"] = "S0001" as AnyObject?
-        jsonParams["fromUserId"] = "S000100001" as AnyObject?
+        jsonParams["fromUserId"] = "S000100019" as AnyObject?
         jsonParams["fromUserRole"] = "S" as AnyObject?
         jsonParams["toUserId"] = self.selectedUserID as AnyObject?
         jsonParams["toUserRole"] = self.selectedUserRole as AnyObject?

@@ -19,6 +19,7 @@ class GPSTrackingViewController: ViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationItem.hidesBackButton = false
         if (CLLocationManager.locationServicesEnabled())
         {
             locationManager = CLLocationManager()
@@ -27,6 +28,9 @@ class GPSTrackingViewController: ViewController,CLLocationManagerDelegate {
             locationManager.requestAlwaysAuthorization()
             locationManager.startUpdatingLocation()
         }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+         self.navigationController?.navigationItem.hidesBackButton = false
     }
     private func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         let location = locations.last as! CLLocation

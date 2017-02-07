@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,7 +72,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04363C6AD7EF7F623F8D2272F6C33F2C</key>
+		<key>1FE2578FF0805299395CF2A0206BB671</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38A6C325E50A2E83811DED10F50E8493</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,6 +107,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>CC0B29F5A932FDFF2E84DDF4007B9D24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D196CB9DA6FF8942C87D0553848FDC3E</key>
 		<dict>
 			<key>primary</key>
@@ -102,12 +122,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E1A0E663F927542B6E8F02D26B88EFD7</key>
+		<key>E9267DD136B8DFAC32C1A56A3017360F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9267DD136B8DFAC32C1A56A3017360F</key>
+		<key>EF4F067C2D0E135B80299B089E168BDA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

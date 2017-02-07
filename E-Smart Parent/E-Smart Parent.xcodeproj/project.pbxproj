@@ -55,6 +55,7 @@
 		25DD89251E34C08500B8FC4E /* ExamResultDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD89241E34C08500B8FC4E /* ExamResultDetails.swift */; };
 		25E080DA1E3A18CA00CD49BF /* AttendanceFeatureViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E080D91E3A18CA00CD49BF /* AttendanceFeatureViewcontroller.swift */; };
 		25E080DC1E3C690100CD49BF /* ChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E080DB1E3C690100CD49BF /* ChartFormatter.swift */; };
+		25E924521E45DFCA00B58F14 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */; };
 		43F2E3B2C6C6B1217AA83107 /* Pods_E_Smart_Parent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB74446A210ADBCBB7380F /* Pods_E_Smart_Parent.framework */; };
 		88AB0EC6F43FD4A108455747 /* Pods_E_Smart_ParentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7693FB1257DC2FCB0315F525 /* Pods_E_Smart_ParentTests.framework */; };
 /* End PBXBuildFile section */
@@ -133,6 +134,7 @@
 		25DD89241E34C08500B8FC4E /* ExamResultDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamResultDetails.swift; sourceTree = "<group>"; };
 		25E080D91E3A18CA00CD49BF /* AttendanceFeatureViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceFeatureViewcontroller.swift; sourceTree = "<group>"; };
 		25E080DB1E3C690100CD49BF /* ChartFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartFormatter.swift; sourceTree = "<group>"; };
+		25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		2665957C02FA1EF3B8452116 /* Pods-E-Smart ParentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Smart ParentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-Smart ParentTests/Pods-E-Smart ParentTests.release.xcconfig"; sourceTree = "<group>"; };
 		38BECAC40255D3C246CFDF59 /* Pods-E-Smart ParentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Smart ParentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-Smart ParentUITests/Pods-E-Smart ParentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7693FB1257DC2FCB0315F525 /* Pods_E_Smart_ParentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Smart_ParentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +205,7 @@
 		25A2238F1E22354F00174896 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25E924501E45DFB200B58F14 /* FontAwesome */,
 				25BFEA0A1E2D271E0022114E /* Firebase */,
 				25A223AB1E2236D800174896 /* MetaData */,
 			);
@@ -509,6 +512,14 @@
 			path = ExamResultFeature;
 			sourceTree = "<group>";
 		};
+		25E924501E45DFB200B58F14 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
 		3506F1F8A9383840AA820E14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,6 +609,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 84Q7ZBJE29;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					25B52DF51E2231D80092A29E = {
 						CreatedOnToolsVersion = 8.2;
@@ -641,6 +657,7 @@
 				25B52DF01E2231D80092A29E /* LaunchScreen.storyboard in Resources */,
 				25A223AD1E2236EB00174896 /* AppMetaData.plist in Resources */,
 				25BFEA0C1E2D27950022114E /* GoogleService-Info.plist in Resources */,
+				25E924521E45DFCA00B58F14 /* fontawesome-webfont.ttf in Resources */,
 				25B52DED1E2231D80092A29E /* Assets.xcassets in Resources */,
 				25B52DE81E2231D80092A29E /* Main.storyboard in Resources */,
 			);

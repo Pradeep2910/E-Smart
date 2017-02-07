@@ -8,11 +8,15 @@
 
 import UIKit
 import Firebase
+import FontAwesome_swift
+
 //let attendanceHistoryURL : URL = URL(string: "http://test.nowskitchen.com/api/Student/GetStudentAttendanceHistory/ST000001")!
 var attendanceHistoryURL = "http://cluster.nowskitchen.com/api/Student/GetStudentAttendanceHistory/"
 
 class ViewController: UIViewController {
     var dashboardItems : NSArray = []
+    
+    @IBOutlet var dashboardCollectionview : UICollectionView?
     var conversationArray = [ConversationList]()
     var loginDetails : LoginDetails = LoginDetails()
     let identifier = "dashboardCell"
@@ -47,6 +51,17 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+      
+        guard let flowLayout = self.dashboardCollectionview?.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        flowLayout.minimumInteritemSpacing = 10.0
+        flowLayout.invalidateLayout()
+    }
 
 }
 
@@ -62,6 +77,8 @@ extension ViewController: UICollectionViewDataSource{
         let dict = dashboardItems[indexPath.row] as! NSDictionary
         let colorDict = dict["RGBValue"] as! NSDictionary
         cell.featureLabel.text = dict["itemName"] as? String
+        cell.layer.cornerRadius = 2.0
+        cell.featureImageview.image = UIImage.fontAwesomeIcon(name: String.fontAwesome(code: (dict["imageName"] as? String)!)!, textColor: UIColor.white  , size: CGSize(width: 30, height: 30))
         cell.backgroundColor = UIColor(red: CGFloat(colorDict["R"] as! Float/255), green:  CGFloat(colorDict["G"] as! Float/255), blue:  CGFloat(colorDict["B"]  as! Float/255), alpha: 1.0)
         return cell
     }
@@ -98,6 +115,7 @@ extension ViewController: UICollectionViewDelegate{
                     
                     break
                 case 5:
+                    self.selectedFeature = "GPS Tracking"
                     let gpsTracking = storyBoard.instantiateViewController(withIdentifier: "gpsTracking") as! GPSTrackingViewController
                     self.navigationController?.pushViewController(gpsTracking, animated: true)
                     break
@@ -117,10 +135,13 @@ extension ViewController: UICollectionViewDelegate{
                     break
                 case 8:
                     self.selectedFeature = "TimeTable"
-                    activityView?.startAnimating()
+//                    activityView?.startAnimating()
                     
-                    self.makeTimetableRequest()
-                    
+                    //self.makeTimetableRequest()
+                    let alert = UIAlertController(title: "Alert", message: "Feature not yet implemented", preferredStyle: UIAlertControllerStyle.alert)
+                    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
                     break
                 
                 default:
@@ -137,9 +158,9 @@ extension ViewController: UICollectionViewDelegate{
 extension ViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.row == 0 {
-            return CGSize(width: collectionView.frame.size.width-10, height: 140.0)
+            return CGSize(width: collectionView.frame.size.width-10, height: 110.0)
         }
-        return CGSize(width: collectionView.frame.size.width/2.1, height: 90.0)
+        return CGSize(width: (collectionView.frame.size.width-20)/2.0, height: 85.0)
     }
 }
 
@@ -235,6 +256,12 @@ extension ViewController{
                     attendanceFeatureVC.datesArray = response!
                     self.navigationController?.pushViewController(attendanceFeatureVC, animated: true)
                 }
+                else{
+                let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+                }
             } else {
                 self.activityView?.stopAnimating()
                 self.activityView?.isHidden = true
@@ -272,6 +299,13 @@ func makeEventsRequest() {
                 calendar.eventsArray = response!
                 self.navigationController?.pushViewController(calendar, animated: true)
             }
+            else{
+            let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+            }
+
         } else {
             self.activityView?.stopAnimating()
             self.activityView?.isHidden = true
@@ -309,6 +343,13 @@ func makeEventsRequest() {
                     calendar.circularsArray = response!
                     self.navigationController?.pushViewController(calendar, animated: true)
                 }
+                else{
+                let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+                }
+
             } else {
                 self.activityView?.stopAnimating()
                 self.activityView?.isHidden = true
@@ -344,6 +385,13 @@ func makeEventsRequest() {
                     homeworks.homeworksArray = response!
                     self.navigationController?.pushViewController(homeworks, animated: true)
                 }
+                else{
+                let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+                }
+
             } else {
                 self.activityView?.stopAnimating()
                 self.activityView?.isHidden = true
@@ -378,7 +426,13 @@ func makeEventsRequest() {
                     let homeworks = self.storyBoard.instantiateViewController(withIdentifier: "homeworks") as! HomeworkFeatureViewController
                     homeworks.homeworksArray = response!
                     self.navigationController?.pushViewController(homeworks, animated: true)
+                }else{
+                let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
                 }
+
             } else {
                 self.activityView?.stopAnimating()
                 self.activityView?.isHidden = true
@@ -414,6 +468,12 @@ func makeEventsRequest() {
                     let examResultCategory = self.storyBoard.instantiateViewController(withIdentifier: "examResultCategory") as! ExamResultFeatureViewcontroller
                     examResultCategory.examResultDict = response!
                     self.navigationController?.pushViewController(examResultCategory, animated: true)
+                }
+                else{
+                    let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+                    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
                 }
             } else {
                 self.activityView?.stopAnimating()
@@ -455,6 +515,12 @@ func makeEventsRequest() {
                 if response != nil {
                     self.getConversationList()
                 }
+                else{
+                    let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+                    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                }
             } else {
                 self.activityView?.stopAnimating()
                 self.activityView?.isHidden = true
@@ -492,6 +558,12 @@ func makeEventsRequest() {
                     conversationList.loginDetails = self.loginDetails
                     self.navigationController?.pushViewController(conversationList, animated: true)
 
+                }
+                else{
+                    let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
+                    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
                 }
             } else {
                 self.activityView?.stopAnimating()

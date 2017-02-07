@@ -11,18 +11,32 @@ import UIKit
 import Alamofire
 import PDTSimpleCalendar
 
+protocol monthChangeDelegate {
+    func monthChanged(_statusDictArray : [Dictionary<String, Any>])
+    func monthNotPresent()
+}
+
 class AttendanceHistoryViewController: PDTSimpleCalendarViewController,PDTSimpleCalendarViewDelegate {
     //    var attendanceHistory : Dictionary = [String : AnyObject]
     var dateDictArray :NSArray = []
+    var presentSection = 0
     
+     var monthDelegate : monthChangeDelegate? = nil
     var requiredColor : UIColor = UIColor.white
-    
+    var statusDictArray : [Dictionary<String, Any>] = []
+    var lastContentOffset : CGFloat = 0.0
     override func viewDidLoad() {
         
         super.viewDidLoad()
         self.delegate = self
         self.weekdayHeaderEnabled = true;
         self.weekdayTextType = PDTSimpleCalendarViewWeekdayTextType(rawValue: 0)!
+        let flow = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        flow.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 200, right: 0)
+        flow.itemSize = CGSize(width: (self.collectionView?.bounds.width)!, height: (self.collectionView?.bounds.height)!)
+        flow.invalidateLayout()
+        
+        
         let offsetFirstDateComponents : NSDateComponents = NSDateComponents()
         offsetFirstDateComponents.month = -3;
         let offsetLastDateComponents : NSDateComponents = NSDateComponents()
@@ -81,18 +95,26 @@ class AttendanceHistoryViewController: PDTSimpleCalendarViewController,PDTSimple
                 if key == "mth"  {
                     let localeStr = "us"
                     let formatter = DateFormatter()
-                    formatter.locale = Locale(identifier: localeStr)
-                    formatter.dateFormat = "MM-yyyy"
-                    let formattedDate = formatter.date(from: dictionaryItem["date"] as! String)
+                    formatter.locale = Locale.current
+                    formatter.timeZone = NSTimeZone(abbreviation: "UTC") as TimeZone!
+                    formatter.dateFormat = "yyyy-MM"
+                    let formattedDate = formatter.date(from: dictionaryItem["mth"] as! String)
                     let formattedMonthDateString = formatter.string(from: _date)
-                    let formattedMonnthDate = formatter.date(from: formattedMonthDateString)
-                    guard (formattedDate?.compare(formattedMonnthDate!)) == ComparisonResult.orderedSame else {
+//                    let formattedMonnthDate = formatter.date(from: formattedMonthDateString)
+//                    guard (formattedDate?.compare(formattedMonnthDate!)) == ComparisonResult.orderedSame else {
+//                        continue
+//                    }
+                    guard (formattedMonthDateString == dictionaryItem["mth"] as! String) else {
                         continue
                     }
-                    return true
+                    statusDictArray.append(dictionaryItem)
                 }
             }
             
+        }
+        
+        if statusDictArray.count > 0 {
+            return true
         }
         return false
         
@@ -143,9 +165,12 @@ class AttendanceHistoryViewController: PDTSimpleCalendarViewController,PDTSimple
     func simpleCalendarViewController(_ controller: PDTSimpleCalendarViewController!, shouldUseCustomColorsFor date: Date!) -> Bool{
         
         if self.checkingForMonth(_date: date) {
-            
+            monthDelegate?.monthChanged(_statusDictArray: statusDictArray)
+            statusDictArray.removeAll()
         }
-        
+        else{
+            monthDelegate?.monthNotPresent()
+        }
         return self.checkingForDate(_date: date)
         
         
@@ -222,4 +247,33 @@ extension Date {
 //        //Return Result
 //        return dateWithHoursAdded
 //    }
+}
+
+extension AttendanceHistoryViewController {
+    
+    
+    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        presentSection = (self.collectionView?.indexPathsForVisibleItems.first?.section)!
+        self.lastContentOffset = scrollView.contentOffset.y
+        
+
+        
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if self.lastContentOffset < scrollView.contentOffset.y {
+            guard let cell = self.collectionView?.cellForItem(at: IndexPath.init(row: 0, section: presentSection + 1)) else{
+                return
+            }
+            scrollView.contentSize = CGSize(width: (cell.bounds.width), height: (cell.bounds.height))
+        }
+        else{
+            guard let cell = self.collectionView?.cellForItem(at: IndexPath.init(row: 0, section: presentSection - 1)) else{
+                return
+            }
+            scrollView.contentSize = CGSize(width: (cell.bounds.width), height: (cell.bounds.height))
+        }
+    }
+    
+    
 }
