@@ -20,7 +20,6 @@ class CalendarViewController: UIViewController,CKCalendarViewDataSource,CKCalend
     override func viewDidLoad() {
         super.viewDidLoad()
         let calendar : CKCalendarView = CKCalendarView()
-        calendar
         calendar.delegate = self
         calendar.dataSource = self
         self.view .addSubview(calendar)

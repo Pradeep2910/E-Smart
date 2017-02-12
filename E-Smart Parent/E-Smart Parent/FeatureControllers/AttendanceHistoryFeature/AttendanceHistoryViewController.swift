@@ -166,12 +166,10 @@ class AttendanceHistoryViewController: UIViewController {
         for dictionaryItem in dateDictionaryArray {
             for key in dictionaryItem.keys{
                 if key == "mth"  {
-                    let localeStr = "us"
                     let formatter = DateFormatter()
                     formatter.locale = Locale.current
                     formatter.timeZone = NSTimeZone.local
                     formatter.dateFormat = "yyyy-MM"
-                    let formattedDate = formatter.date(from: dictionaryItem["mth"] as! String)
                     let formattedMonthDateString = formatter.string(from: _date)
                       guard (formattedMonthDateString == dictionaryItem["mth"] as! String) else {
                         continue
@@ -287,7 +285,7 @@ extension AttendanceHistoryViewController: JTAppleCalendarViewDelegate, JTAppleC
         guard let startDate = visibleDates.monthDates.first else {
             return
         }
-        formatter
+    //    formatter
         
         let month = testCalendar.dateComponents([.month], from: startDate).month!
         let monthName = DateFormatter().monthSymbols[(month-1) % 12]

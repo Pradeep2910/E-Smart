@@ -108,7 +108,6 @@ extension ViewController: UICollectionViewDataSource{
 }
 extension ViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let serviceManager = ServiceManagerClass(_delegate: self)
                 switch indexPath.row {
                 case 0:
                     self.selectedFeature = "Message"
@@ -200,7 +199,7 @@ extension ViewController: ServiceManagerDelegate {
         }
         else if self.selectedFeature == "Calendar" {
             let dates = _response["data"]! as! String
-            guard let datesDict = dates.parseJSONString as? NSArray
+            guard (dates.parseJSONString as? NSArray) != nil
                 else {
                     return
             }

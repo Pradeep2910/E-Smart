@@ -50,18 +50,3 @@ extension ExamResultFeatureViewcontroller : UITableViewDelegate{
     }
 }
 
-extension UITableViewCell{
-    override open var frame: CGRect {
-        get {
-            return super.frame
-        }
-        set (newFrame) {
-            var frame = newFrame
-            frame.origin.x += 10
-            frame.origin.y += 10
-            frame.size.width -= 20
-            frame.size.height -= 10
-            super.frame = frame
-        }
-    }
-}
