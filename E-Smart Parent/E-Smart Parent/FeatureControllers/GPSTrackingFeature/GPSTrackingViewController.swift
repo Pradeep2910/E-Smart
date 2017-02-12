@@ -11,7 +11,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class GPSTrackingViewController: ViewController,CLLocationManagerDelegate {
+class GPSTrackingViewController: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var mapKitView: MKMapView!
     
     

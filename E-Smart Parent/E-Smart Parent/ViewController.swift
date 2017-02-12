@@ -15,7 +15,7 @@ var attendanceHistoryURL = "http://cluster.nowskitchen.com/api/Student/GetStuden
 
 class ViewController: UIViewController {
     var dashboardItems : NSArray = []
-    
+    @IBOutlet var logoutBarButton : UIBarButtonItem?
     @IBOutlet var dashboardCollectionview : UICollectionView?
     var conversationArray = [ConversationList]()
     var loginDetails : LoginDetails = LoginDetails()
@@ -25,10 +25,25 @@ class ViewController: UIViewController {
     @IBOutlet var activityView : UIActivityIndicatorView?
     override func viewDidLoad() {
         super.viewDidLoad()
+        let logoutImage = UIImage.fontAwesomeIcon(name: String.fontAwesome(code: "fa-ellipsis-v")!, textColor: UIColor.white  , size: CGSize(width: 30, height: 30))
+        
+        let logoutButton = UIButton(type: .custom)
+        logoutButton.setImage(logoutImage, for: .normal)
+        logoutButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        logoutButton.addTarget(self, action: #selector(logoutTapped), for: .touchUpInside)
+        
+        
+        logoutBarButton = UIBarButtonItem(customView: logoutButton)
+        
+        self.navigationItem.setRightBarButtonItems([logoutBarButton!], animated: true)
         self.navigationItem.hidesBackButton = true
         let metaDataManager = MetaDataManager()
         dashboardItems = metaDataManager.getDashboardItems()
         
+    }
+    
+    func logoutTapped() {
+        self.performSegue(withIdentifier: "optionsPopover", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,6 +63,13 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(conversationList, animated: true)
 
             
+        }
+        if segue.identifier == "optionsPopover" {
+            let popoverViewController = segue.destination as! LogoutPopoverController
+            popoverViewController.popoverPresentationController?.barButtonItem = logoutBarButton
+            popoverViewController.logoutDelegate = self
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
+            popoverViewController.popoverPresentationController!.delegate = self
         }
         
     }
@@ -135,13 +157,9 @@ extension ViewController: UICollectionViewDelegate{
                     break
                 case 8:
                     self.selectedFeature = "TimeTable"
-//                    activityView?.startAnimating()
+                    activityView?.startAnimating()
                     
-                    //self.makeTimetableRequest()
-                    let alert = UIAlertController(title: "Alert", message: "Feature not yet implemented", preferredStyle: UIAlertControllerStyle.alert)
-                    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
-                    alert.addAction(okAction)
-                    self.present(alert, animated: true, completion: nil)
+                    self.makeTimetableRequest()
                     break
                 
                 default:
@@ -423,9 +441,9 @@ func makeEventsRequest() {
                 self.activityView?.stopAnimating()
                 self.activityView?.isHidden = true
                 if response != nil {
-                    let homeworks = self.storyBoard.instantiateViewController(withIdentifier: "homeworks") as! HomeworkFeatureViewController
-                    homeworks.homeworksArray = response!
-                    self.navigationController?.pushViewController(homeworks, animated: true)
+                    let timeTable = self.storyBoard.instantiateViewController(withIdentifier: "timeTable") as! TimeTableFeature
+                    timeTable.dayDomainArray = response!
+                    self.navigationController?.pushViewController(timeTable, animated: true)
                 }else{
                 let alert = UIAlertController(title: "Alert", message: "No Data Present", preferredStyle: UIAlertControllerStyle.alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
@@ -585,3 +603,20 @@ func makeEventsRequest() {
 
 }
 
+
+
+extension ViewController: UIPopoverPresentationControllerDelegate{
+
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.none
+    }
+}
+
+
+extension ViewController : logoutDelegate{
+    func logoutFunction() {
+        self.dismiss(animated: true, completion: nil)
+        let loginVc = self.storyBoard.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+        self.navigationController?.pushViewController(loginVc, animated: true)
+    }
+}

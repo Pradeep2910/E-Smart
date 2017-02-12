@@ -41,6 +41,16 @@
 		25D0FBC21E2A5C0000CD5419 /* CircularDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0FBC11E2A5C0000CD5419 /* CircularDetails.swift */; };
 		25D0FBC61E2A65AF00CD5419 /* CircularTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0FBC51E2A65AF00CD5419 /* CircularTableviewCell.swift */; };
 		25D2F87C1E2B2BCA00D9A9CE /* CircularDetailsViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2F87B1E2B2BCA00D9A9CE /* CircularDetailsViewcontroller.swift */; };
+		25D32A971E4F217600FB1236 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32A951E4F217600FB1236 /* CellView.swift */; };
+		25D32A981E4F217600FB1236 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D32A961E4F217600FB1236 /* CellView.xib */; };
+		25D32A9B1E4F2B0300FB1236 /* CalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32A9A1E4F2B0300FB1236 /* CalendarHeader.swift */; };
+		25D32A9D1E4F2B1F00FB1236 /* CalendarHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D32A9C1E4F2B1F00FB1236 /* CalendarHeader.xib */; };
+		25D32AA01E4F5F3600FB1236 /* TimeTableFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32A9F1E4F5F3600FB1236 /* TimeTableFeature.swift */; };
+		25D32AA31E4F6A8000FB1236 /* TimeTableHeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32AA21E4F6A8000FB1236 /* TimeTableHeaderCollectionCell.swift */; };
+		25D32AA51E4F6AB100FB1236 /* SubjectCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32AA41E4F6AB100FB1236 /* SubjectCollectionCell.swift */; };
+		25D32AA71E4F6B0D00FB1236 /* PeriodTitleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32AA61E4F6B0D00FB1236 /* PeriodTitleCollectionCell.swift */; };
+		25D32AA91E4F6C6F00FB1236 /* DayDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32AA81E4F6C6F00FB1236 /* DayDomain.swift */; };
+		25D32AAB1E4F6DA700FB1236 /* PeriodDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D32AAA1E4F6DA700FB1236 /* PeriodDomain.swift */; };
 		25D50EAF1E2FD602009AD075 /* ConversationListViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D50EAE1E2FD602009AD075 /* ConversationListViewcontroller.swift */; };
 		25D50EB11E2FD952009AD075 /* ConversationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D50EB01E2FD952009AD075 /* ConversationList.swift */; };
 		25D50EB41E2FE0AE009AD075 /* ConversationListTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D50EB31E2FE0AE009AD075 /* ConversationListTableviewCell.swift */; };
@@ -55,6 +65,7 @@
 		25DD89251E34C08500B8FC4E /* ExamResultDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD89241E34C08500B8FC4E /* ExamResultDetails.swift */; };
 		25E080DA1E3A18CA00CD49BF /* AttendanceFeatureViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E080D91E3A18CA00CD49BF /* AttendanceFeatureViewcontroller.swift */; };
 		25E080DC1E3C690100CD49BF /* ChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E080DB1E3C690100CD49BF /* ChartFormatter.swift */; };
+		25E2E0A11E504E320019A262 /* LogoutPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E2E0A01E504E320019A262 /* LogoutPopoverController.swift */; };
 		25E924521E45DFCA00B58F14 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */; };
 		43F2E3B2C6C6B1217AA83107 /* Pods_E_Smart_Parent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB74446A210ADBCBB7380F /* Pods_E_Smart_Parent.framework */; };
 		88AB0EC6F43FD4A108455747 /* Pods_E_Smart_ParentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7693FB1257DC2FCB0315F525 /* Pods_E_Smart_ParentTests.framework */; };
@@ -120,6 +131,16 @@
 		25D0FBC11E2A5C0000CD5419 /* CircularDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularDetails.swift; sourceTree = "<group>"; };
 		25D0FBC51E2A65AF00CD5419 /* CircularTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTableviewCell.swift; sourceTree = "<group>"; };
 		25D2F87B1E2B2BCA00D9A9CE /* CircularDetailsViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularDetailsViewcontroller.swift; sourceTree = "<group>"; };
+		25D32A951E4F217600FB1236 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		25D32A961E4F217600FB1236 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		25D32A9A1E4F2B0300FB1236 /* CalendarHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeader.swift; sourceTree = "<group>"; };
+		25D32A9C1E4F2B1F00FB1236 /* CalendarHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarHeader.xib; sourceTree = "<group>"; };
+		25D32A9F1E4F5F3600FB1236 /* TimeTableFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableFeature.swift; sourceTree = "<group>"; };
+		25D32AA21E4F6A8000FB1236 /* TimeTableHeaderCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableHeaderCollectionCell.swift; sourceTree = "<group>"; };
+		25D32AA41E4F6AB100FB1236 /* SubjectCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCollectionCell.swift; sourceTree = "<group>"; };
+		25D32AA61E4F6B0D00FB1236 /* PeriodTitleCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodTitleCollectionCell.swift; sourceTree = "<group>"; };
+		25D32AA81E4F6C6F00FB1236 /* DayDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDomain.swift; sourceTree = "<group>"; };
+		25D32AAA1E4F6DA700FB1236 /* PeriodDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodDomain.swift; sourceTree = "<group>"; };
 		25D50EAE1E2FD602009AD075 /* ConversationListViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewcontroller.swift; sourceTree = "<group>"; };
 		25D50EB01E2FD952009AD075 /* ConversationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationList.swift; sourceTree = "<group>"; };
 		25D50EB31E2FE0AE009AD075 /* ConversationListTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListTableviewCell.swift; sourceTree = "<group>"; };
@@ -134,6 +155,7 @@
 		25DD89241E34C08500B8FC4E /* ExamResultDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamResultDetails.swift; sourceTree = "<group>"; };
 		25E080D91E3A18CA00CD49BF /* AttendanceFeatureViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceFeatureViewcontroller.swift; sourceTree = "<group>"; };
 		25E080DB1E3C690100CD49BF /* ChartFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartFormatter.swift; sourceTree = "<group>"; };
+		25E2E0A01E504E320019A262 /* LogoutPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutPopoverController.swift; sourceTree = "<group>"; };
 		25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		2665957C02FA1EF3B8452116 /* Pods-E-Smart ParentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Smart ParentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-Smart ParentTests/Pods-E-Smart ParentTests.release.xcconfig"; sourceTree = "<group>"; };
 		38BECAC40255D3C246CFDF59 /* Pods-E-Smart ParentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Smart ParentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-Smart ParentUITests/Pods-E-Smart ParentUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,9 +254,11 @@
 		25A223921E22355900174896 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				25D32A991E4F2AB300FB1236 /* AttendanceCalendarHeader */,
 				25D50EB81E2FFC05009AD075 /* Labels */,
 				25D0FBC31E2A653400CD5419 /* TableviewCells */,
 				25A2239F1E22365A00174896 /* CollectionviewCells */,
+				25E2E0A01E504E320019A262 /* LogoutPopoverController.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -242,6 +266,7 @@
 		25A223931E22355C00174896 /* FeatureControllers */ = {
 			isa = PBXGroup;
 			children = (
+				25D32A9E1E4F5F1200FB1236 /* TimeTableFeature */,
 				25DD891F1E34BD0600B8FC4E /* ExamResultFeature */,
 				25BFEA0D1E2D28920022114E /* MessageFeature */,
 				259A280A1E2B3D6000EE3233 /* HomeworkFeature */,
@@ -289,6 +314,8 @@
 		25A2239F1E22365A00174896 /* CollectionviewCells */ = {
 			isa = PBXGroup;
 			children = (
+				25D32AA11E4F6A3D00FB1236 /* TimeTableCells */,
+				25D32A941E4F217600FB1236 /* DateCellCreatedWithXIB */,
 				25A223A01E22367300174896 /* DashboardCell.swift */,
 			);
 			path = CollectionviewCells;
@@ -438,6 +465,8 @@
 				25D50EBD1E300186009AD075 /* ConversationMessages.swift */,
 				25DD891A1E3372A700B8FC4E /* ContactDetails.swift */,
 				25DD89241E34C08500B8FC4E /* ExamResultDetails.swift */,
+				25D32AA81E4F6C6F00FB1236 /* DayDomain.swift */,
+				25D32AAA1E4F6DA700FB1236 /* PeriodDomain.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -476,6 +505,42 @@
 				25D0FBC51E2A65AF00CD5419 /* CircularTableviewCell.swift */,
 			);
 			path = CircularTableviewCell;
+			sourceTree = "<group>";
+		};
+		25D32A941E4F217600FB1236 /* DateCellCreatedWithXIB */ = {
+			isa = PBXGroup;
+			children = (
+				25D32A951E4F217600FB1236 /* CellView.swift */,
+				25D32A961E4F217600FB1236 /* CellView.xib */,
+			);
+			path = DateCellCreatedWithXIB;
+			sourceTree = "<group>";
+		};
+		25D32A991E4F2AB300FB1236 /* AttendanceCalendarHeader */ = {
+			isa = PBXGroup;
+			children = (
+				25D32A9A1E4F2B0300FB1236 /* CalendarHeader.swift */,
+				25D32A9C1E4F2B1F00FB1236 /* CalendarHeader.xib */,
+			);
+			path = AttendanceCalendarHeader;
+			sourceTree = "<group>";
+		};
+		25D32A9E1E4F5F1200FB1236 /* TimeTableFeature */ = {
+			isa = PBXGroup;
+			children = (
+				25D32A9F1E4F5F3600FB1236 /* TimeTableFeature.swift */,
+			);
+			path = TimeTableFeature;
+			sourceTree = "<group>";
+		};
+		25D32AA11E4F6A3D00FB1236 /* TimeTableCells */ = {
+			isa = PBXGroup;
+			children = (
+				25D32AA21E4F6A8000FB1236 /* TimeTableHeaderCollectionCell.swift */,
+				25D32AA41E4F6AB100FB1236 /* SubjectCollectionCell.swift */,
+				25D32AA61E4F6B0D00FB1236 /* PeriodTitleCollectionCell.swift */,
+			);
+			path = TimeTableCells;
 			sourceTree = "<group>";
 		};
 		25D50EB21E2FE088009AD075 /* ConversationListTableviewCell */ = {
@@ -657,8 +722,10 @@
 				25B52DF01E2231D80092A29E /* LaunchScreen.storyboard in Resources */,
 				25A223AD1E2236EB00174896 /* AppMetaData.plist in Resources */,
 				25BFEA0C1E2D27950022114E /* GoogleService-Info.plist in Resources */,
+				25D32A981E4F217600FB1236 /* CellView.xib in Resources */,
 				25E924521E45DFCA00B58F14 /* fontawesome-webfont.ttf in Resources */,
 				25B52DED1E2231D80092A29E /* Assets.xcassets in Resources */,
+				25D32A9D1E4F2B1F00FB1236 /* CalendarHeader.xib in Resources */,
 				25B52DE81E2231D80092A29E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -830,11 +897,16 @@
 				25DD89231E34BFC500B8FC4E /* ExamResultBarGraphController.swift in Sources */,
 				25DD891D1E33DECC00B8FC4E /* ContactsTableviewController.swift in Sources */,
 				259A28131E2B3E9F00EE3233 /* HomeworkDetails.swift in Sources */,
+				25D32AAB1E4F6DA700FB1236 /* PeriodDomain.swift in Sources */,
+				25D32A9B1E4F2B0300FB1236 /* CalendarHeader.swift in Sources */,
+				25D32AA71E4F6B0D00FB1236 /* PeriodTitleCollectionCell.swift in Sources */,
 				25D50EB11E2FD952009AD075 /* ConversationList.swift in Sources */,
 				25D0FBC61E2A65AF00CD5419 /* CircularTableviewCell.swift in Sources */,
 				25BFEA091E2D1E310022114E /* AdditionalDetails.swift in Sources */,
 				25D0FBB11E2A0D0900CD5419 /* APIConstants.swift in Sources */,
+				25D32AA91E4F6C6F00FB1236 /* DayDomain.swift in Sources */,
 				25DD89251E34C08500B8FC4E /* ExamResultDetails.swift in Sources */,
+				25D32AA01E4F5F3600FB1236 /* TimeTableFeature.swift in Sources */,
 				25A223AA1E2236C400174896 /* MetaDataManager.swift in Sources */,
 				25D0FBBD1E2A5A8200CD5419 /* CircularFeatureViewController.swift in Sources */,
 				25D0FBAE1E2A0BCE00CD5419 /* RequestBuilder.swift in Sources */,
@@ -854,14 +926,18 @@
 				25D50EAF1E2FD602009AD075 /* ConversationListViewcontroller.swift in Sources */,
 				25A223A81E2236BC00174896 /* ServiceManagerClass.swift in Sources */,
 				25D0FBB31E2A0E5A00CD5419 /* LoginResponseStruct.swift in Sources */,
+				25D32AA31E4F6A8000FB1236 /* TimeTableHeaderCollectionCell.swift in Sources */,
 				25D0FBB91E2A192D00CD5419 /* ResponseParser.swift in Sources */,
 				25DD891B1E3372A700B8FC4E /* ContactDetails.swift in Sources */,
+				25D32AA51E4F6AB100FB1236 /* SubjectCollectionCell.swift in Sources */,
 				25B52DEB1E2231D80092A29E /* E_Smart_Parent.xcdatamodeld in Sources */,
 				25E080DA1E3A18CA00CD49BF /* AttendanceFeatureViewcontroller.swift in Sources */,
 				25A223A41E22368E00174896 /* Reachability.swift in Sources */,
 				25E080DC1E3C690100CD49BF /* ChartFormatter.swift in Sources */,
 				25B52DE31E2231D80092A29E /* AppDelegate.swift in Sources */,
 				25D0FBAC1E2A096000CD5419 /* LoginViewController.swift in Sources */,
+				25E2E0A11E504E320019A262 /* LogoutPopoverController.swift in Sources */,
+				25D32A971E4F217600FB1236 /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,12 +29,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MBCalendarKit.xcscheme</key>
+		<key>JTAppleCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PDTSimpleCalendar.xcscheme</key>
+		<key>MBCalendarKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,12 +72,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1FE2578FF0805299395CF2A0206BB671</key>
+		<key>0244CB65BDEAC987EBC2687F96BF30B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>38A6C325E50A2E83811DED10F50E8493</key>
+		<key>1FE2578FF0805299395CF2A0206BB671</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77AB16E71967928775ACD2706514E867</key>
+		<key>6990E5F3179E62EBB5684CBED78B3F04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,7 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC0B29F5A932FDFF2E84DDF4007B9D24</key>
+		<key>BF0221E8569B7BE65F7BA0CBD282D370</key>
 		<dict>
 			<key>primary</key>
 			<true/>

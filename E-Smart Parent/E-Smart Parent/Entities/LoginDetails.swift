@@ -21,8 +21,10 @@ class LoginDetails {
     var dateOfBirth: String!
     var batchID: String!
     var feesType: String!
+    
     var additionalDetails : AdditionalDetails!
     
+    var loginResponse  :String?
     init?(jsonString:Dictionary<String, Any>) {
         
       

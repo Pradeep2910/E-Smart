@@ -9,117 +9,96 @@
 import Foundation
 import UIKit
 import Alamofire
-import PDTSimpleCalendar
 
 protocol monthChangeDelegate {
     func monthChanged(_statusDictArray : [Dictionary<String, Any>])
     func monthNotPresent()
 }
 
-class AttendanceHistoryViewController: PDTSimpleCalendarViewController,PDTSimpleCalendarViewDelegate {
-    //    var attendanceHistory : Dictionary = [String : AnyObject]
+import JTAppleCalendar
+class AttendanceHistoryViewController: UIViewController {
+    @IBOutlet weak var calendarView: JTAppleCalendarView!
+    let formatter = DateFormatter()
     var dateDictArray :NSArray = []
-    var presentSection = 0
-    
-     var monthDelegate : monthChangeDelegate? = nil
+    let red = UIColor.red
+    var monthText = ""
+    let white = UIColor.white
+    let black = UIColor.black
+    let gray = UIColor.gray
+    let shade = UIColor(hexString: "0x4E4E4E")
+    var testCalendar = Calendar.autoupdatingCurrent
+    var monthDelegate : monthChangeDelegate? = nil
     var requiredColor : UIColor = UIColor.white
     var statusDictArray : [Dictionary<String, Any>] = []
-    var lastContentOffset : CGFloat = 0.0
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        self.delegate = self
-        self.weekdayHeaderEnabled = true;
-        self.weekdayTextType = PDTSimpleCalendarViewWeekdayTextType(rawValue: 0)!
-        let flow = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
-        flow.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 200, right: 0)
-        flow.itemSize = CGSize(width: (self.collectionView?.bounds.width)!, height: (self.collectionView?.bounds.height)!)
-        flow.invalidateLayout()
         
+        formatter.dateFormat = "yyyy MM dd"
+        formatter.locale = Locale.current
+        formatter.timeZone = NSTimeZone.local
+        testCalendar.timeZone = NSTimeZone.local
+        // Setting up your dataSource and delegate is manditory
+        // ___________________________________________________________________
+        calendarView.delegate = self
+        calendarView.dataSource = self
         
-        let offsetFirstDateComponents : NSDateComponents = NSDateComponents()
-        offsetFirstDateComponents.month = -3;
-        let offsetLastDateComponents : NSDateComponents = NSDateComponents()
-        offsetLastDateComponents.month = 3;
-        let ahFirstDate : Date = self.calendar .date(byAdding: offsetFirstDateComponents as DateComponents, to: NSDate() as Date)!
-        let ahLastDate : Date = self.calendar .date(byAdding: offsetLastDateComponents as DateComponents, to: NSDate() as Date)!
-        self.firstDate = ahFirstDate
-        self.lastDate = ahLastDate;
-        if UIViewController.instancesRespond(to: #selector(getter: edgesForExtendedLayout)) {
-            self.edgesForExtendedLayout = UIRectEdge.bottom
+        // ___________________________________________________________________
+        // Registering your cells is manditory
+        // ___________________________________________________________________
+        calendarView.registerCellViewXib(file: "CellView")
+        
+        // ___________________________________________________________________
+        // Registering header cells is optional
+        calendarView.registerHeaderView(xibFileNames: ["CalendarHeader"])
+        // ___________________________________________________________________
+        
+        calendarView.cellInset = CGPoint(x: 0, y: 0)
+        
+        calendarView.visibleDates { (visibleDates: DateSegmentInfo) in
+            self.setupViewsOfCalendar(from: visibleDates)
         }
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    // Function to handle the calendar selection
+    func handleCellSelection(view: JTAppleDayCellView?, cellState: CellState) {
+        guard let myCustomCell = view as? CellView  else {return }
+        if cellState.isSelected {
+            myCustomCell.selectedView.layer.cornerRadius =  15
+            myCustomCell.selectedView.isHidden = false
+        } else {
+            myCustomCell.selectedView.isHidden = true
+        }
     }
+    
     
     func checkingForDate(_date: Date!) -> Bool{
         
         guard let dateDictionaryArray = self.dateDictArray[0] as? [[String:AnyObject]] else {
-                        return false
-                    }
-        
-            for dictionaryItem in dateDictionaryArray {
-                for key in dictionaryItem.keys{
-                     if key == "date"  {
-                            let localeStr = "us"
-                        let formatter = DateFormatter()
-                        formatter.locale = Locale(identifier: localeStr)
-                        formatter.dateFormat = "yyyy-dd-MM"
-                        let formattedDate = formatter.date(from: dictionaryItem["date"] as! String)
-                        guard (formattedDate?.compare(_date)) == ComparisonResult.orderedSame else {
-                            continue
-                        }
-                        return true
-                    }
-                }
-
-            }
-        return false
-        
-    }
-    
-    
-    func checkingForMonth(_date: Date!) -> Bool{
-        
-        guard let dateDictionaryArray = self.dateDictArray[1] as? [[String:AnyObject]] else {
             return false
         }
         
         for dictionaryItem in dateDictionaryArray {
             for key in dictionaryItem.keys{
-                if key == "mth"  {
+                if key == "date"  {
                     let localeStr = "us"
                     let formatter = DateFormatter()
-                    formatter.locale = Locale.current
-                    formatter.timeZone = NSTimeZone(abbreviation: "UTC") as TimeZone!
-                    formatter.dateFormat = "yyyy-MM"
-                    let formattedDate = formatter.date(from: dictionaryItem["mth"] as! String)
-                    let formattedMonthDateString = formatter.string(from: _date)
-//                    let formattedMonnthDate = formatter.date(from: formattedMonthDateString)
-//                    guard (formattedDate?.compare(formattedMonnthDate!)) == ComparisonResult.orderedSame else {
-//                        continue
-//                    }
-                    guard (formattedMonthDateString == dictionaryItem["mth"] as! String) else {
+                    formatter.locale = Locale(identifier: localeStr)
+                    formatter.dateFormat = "yyyy-dd-MM"
+                    let formattedDate = formatter.date(from: dictionaryItem["date"] as! String)
+                    guard (formattedDate?.compare(_date)) == ComparisonResult.orderedSame else {
                         continue
                     }
-                    statusDictArray.append(dictionaryItem)
+                    return true
                 }
             }
             
         }
-        
-        if statusDictArray.count > 0 {
-            return true
-        }
         return false
         
     }
-
+    
     
     func checkinfColor(_date: Date!) -> UIColor{
         guard let dateDictionaryArray = self.dateDictArray[0] as? [[String:AnyObject]] else {
@@ -151,129 +130,173 @@ class AttendanceHistoryViewController: PDTSimpleCalendarViewController,PDTSimple
                 }
                 
             }
-
+            
         }
-               return UIColor.white
+        return UIColor.white
     }
-    func simpleCalendarViewController(_ controller: PDTSimpleCalendarViewController!, didSelect date: Date!)
-    {
-        print("Date Selected : %@",date);
-        print("Date Selected with Locale %@", date.description(with: NSLocale.system));
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    // Function to handle the text color of the calendar
+    func handleCellTextColor(view: JTAppleDayCellView?, cellState: CellState) {
+        
+        guard let myCustomCell = view as? CellView  else {
+            return
+        }
+        
+        if cellState.isSelected {
+            myCustomCell.dayLabel.textColor = white
+        } else {
+            if cellState.dateBelongsTo == .thisMonth {
+                myCustomCell.dayLabel.textColor = black
+            } else {
+                myCustomCell.dayLabel.textColor = gray
+            }
+        }
+    }
+    
+    
+    func checkingForMonth(_date: Date!) -> Bool{
+        
+        guard let dateDictionaryArray = self.dateDictArray[1] as? [[String:AnyObject]] else {
+            return false
+        }
+        for dictionaryItem in dateDictionaryArray {
+            for key in dictionaryItem.keys{
+                if key == "mth"  {
+                    let localeStr = "us"
+                    let formatter = DateFormatter()
+                    formatter.locale = Locale.current
+                    formatter.timeZone = NSTimeZone.local
+                    formatter.dateFormat = "yyyy-MM"
+                    let formattedDate = formatter.date(from: dictionaryItem["mth"] as! String)
+                    let formattedMonthDateString = formatter.string(from: _date)
+                      guard (formattedMonthDateString == dictionaryItem["mth"] as! String) else {
+                        continue
+                    }
+                    statusDictArray.append(dictionaryItem)
+                }
+            }
+            
+        }
+        if statusDictArray.count > 0 {
+            return true
+        }
+        
+        return false
         
     }
     
-    func simpleCalendarViewController(_ controller: PDTSimpleCalendarViewController!, shouldUseCustomColorsFor date: Date!) -> Bool{
+    
+    
+}
+
+// MARK : JTAppleCalendarDelegate
+extension AttendanceHistoryViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
+    /// Asks the data source to return the start and end boundary dates
+    /// as well as the calendar to use. You should properly configure
+    /// your calendar at this point.
+    /// - Parameters:
+    ///     - calendar: The JTAppleCalendar view requesting this information.
+    /// - returns:
+    ///     - ConfigurationParameters instance:
+    public func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
+        let startDate = formatter.date(from: "2016 02 01")!
+        let endDate = formatter.date(from: "2018 12 01")!
+        let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate, numberOfRows: 5, calendar: testCalendar, generateInDates: .off, generateOutDates: .off, firstDayOfWeek: .sunday, hasStrictBoundaries: true)
+        return parameters
+    }
+    
+    func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
+        let myCustomCell = cell as! CellView
+        myCustomCell.dayLabel.text = cellState.text
         
+        myCustomCell.backgroundColor = self.checkinfColor(_date: date)
         if self.checkingForMonth(_date: date) {
             monthDelegate?.monthChanged(_statusDictArray: statusDictArray)
             statusDictArray.removeAll()
         }
-        else{
-            monthDelegate?.monthNotPresent()
-        }
-        return self.checkingForDate(_date: date)
-        
-        
-        
-        
+        //        handleCellSelection(view: cell, cellState: cellState)
+        handleCellTextColor(view: cell, cellState: cellState)
     }
     
-   func simpleCalendarViewController(controller: PDTSimpleCalendarViewController!, monthDidAppear date: NSDate!){
-        
+    func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
+        //        handleCellSelection(view: cell, cellState: cellState)
+        handleCellTextColor(view: cell, cellState: cellState)
     }
     
-    func simpleCalendarViewController(_ controller: PDTSimpleCalendarViewController!, circleColorFor date: Date!) -> UIColor!{
-        return self.checkinfColor(_date: date)
-        
-    }
-    func simpleCalendarViewController(_ controller: PDTSimpleCalendarViewController!, textColorFor date: Date!) -> UIColor!{
-        return UIColor.black
+    func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
+        //        handleCellSelection(view: cell, cellState: cellState)
+        handleCellTextColor(view: cell, cellState: cellState)
     }
     
-
-}
-extension Date {
-    func isGreaterThanDate(dateToCompare: Date) -> Bool {
-        //Declare Variables
-        var isGreater = false
+    
+    func calendar(_ calendar: JTAppleCalendarView, sectionHeaderIdentifierFor range: (start: Date, end: Date), belongingTo month: Int) -> String {
         
-        //Compare Values
-        if self.compare(dateToCompare) == ComparisonResult.orderedDescending {
-            isGreater = true
-        }
-        
-        //Return Result
-        return isGreater
+        return "CalendarHeader"
     }
     
-    func isLessThanDate(dateToCompare: Date) -> Bool {
-        //Declare Variables
-        var isLess = false
-        
-        //Compare Values
-        if self.compare(dateToCompare) == ComparisonResult.orderedAscending {
-            isLess = true
-        }
-        
-        //Return Result
-        return isLess
+    func calendar(_ calendar: JTAppleCalendarView, sectionHeaderSizeFor range: (start: Date, end: Date), belongingTo month: Int) -> CGSize {
+        return CGSize(width: self.view.bounds.width, height: 60)
     }
     
-    func equalToDate(dateToCompare: Date) -> Bool {
-        //Declare Variables
-        var isEqualTo = false
-        
-        //Compare Values
-        if self.compare(dateToCompare) == ComparisonResult.orderedSame {
-            isEqualTo = true
-        }
-        
-        //Return Result
-        return isEqualTo
-    }
-    
-//    func addDays(daysToAdd: Int) -> Date {
-//        let secondsInDays: TimeInterval = Double(daysToAdd) * 60 * 60 * 24
-//        let dateWithDaysAdded: Date = self.dateByAddingTimeInterval(secondsInDays)
-//        
-//        //Return Result
-//        return dateWithDaysAdded
-//    }
-//    
-//    func addHours(hoursToAdd: Int) -> Date {
-//        let secondsInHours: TimeInterval = Double(hoursToAdd) * 60 * 60
-//        let dateWithHoursAdded: Date = self.dateByAddingTimeInterval(secondsInHours)
-//        
-//        //Return Result
-//        return dateWithHoursAdded
-//    }
-}
-
-extension AttendanceHistoryViewController {
-    
-    
-    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        presentSection = (self.collectionView?.indexPathsForVisibleItems.first?.section)!
-        self.lastContentOffset = scrollView.contentOffset.y
-        
-
-        
-    }
-    
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if self.lastContentOffset < scrollView.contentOffset.y {
-            guard let cell = self.collectionView?.cellForItem(at: IndexPath.init(row: 0, section: presentSection + 1)) else{
-                return
-            }
-            scrollView.contentSize = CGSize(width: (cell.bounds.width), height: (cell.bounds.height))
-        }
-        else{
-            guard let cell = self.collectionView?.cellForItem(at: IndexPath.init(row: 0, section: presentSection - 1)) else{
-                return
-            }
-            scrollView.contentSize = CGSize(width: (cell.bounds.width), height: (cell.bounds.height))
+    func calendar(_ calendar: JTAppleCalendarView, willDisplaySectionHeader header: JTAppleHeaderView, range: (start: Date, end: Date), identifier: String) {
+        switch identifier {
+        case "CalendarHeader":
+            let headerCell = header as? CalendarHeader
+            headerCell?.monthLabel.text = monthText
+            headerCell?.backButton.addTarget(self, action: #selector(previousButtonTapped(_:)), for: .touchUpInside)
+            headerCell?.nextButton.addTarget(self, action: #selector(nextButtonTapped(_:)), for: .touchUpInside)
+            break
+        default:
+            break
         }
     }
     
+    
+    func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
+        self.setupViewsOfCalendar(from: visibleDates)
+    }
+    
+    func scrollDidEndDecelerating(for calendar: JTAppleCalendarView) {
+        self.setupViewsOfCalendar(from: calendarView.visibleDates())
+    }
+    
+    func nextButtonTapped(_ sender: UIButton) {
+        monthDelegate?.monthNotPresent()
+         statusDictArray.removeAll()
+        self.calendarView.scrollToSegment(.next) {
+            self.calendarView.visibleDates({ (visibleDates: DateSegmentInfo) in
+                self.setupViewsOfCalendar(from: visibleDates)
+            })
+        }
+    }
+    
+    func previousButtonTapped(_ sender: UIButton) {
+        monthDelegate?.monthNotPresent()
+         statusDictArray.removeAll()
+        self.calendarView.scrollToSegment(.previous) {
+            self.calendarView.visibleDates({ (visibleDates: DateSegmentInfo) in
+                self.setupViewsOfCalendar(from: visibleDates)
+            })
+        }
+    }
+    func setupViewsOfCalendar(from visibleDates: DateSegmentInfo) {
+        guard let startDate = visibleDates.monthDates.first else {
+            return
+        }
+        formatter
+        
+        let month = testCalendar.dateComponents([.month], from: startDate).month!
+        let monthName = DateFormatter().monthSymbols[(month-1) % 12]
+        // 0 indexed array
+        let year = testCalendar.component(.year, from: startDate)
+        self.monthText = monthName + " " + String(year)
+        calendarView.reloadData()
+    }
     
 }
+
+

@@ -22,8 +22,12 @@ class RequestBuilder {
                     (success, response, error) in
                     if success {
                         let loginResponse = ResponseParser.parseLoginResponse(jsonData: response)
-                        //if loginResponse?.statusCode == "1" {
+                        if loginResponse?.loginResponse != nil{
+                        completionHandler(false,loginResponse, error)
+                        }
+                        else{//if loginResponse?.statusCode == "1" {
                         completionHandler(true,loginResponse, error)
+                        }
                         //                } else {
                         //                    completionHandler(false,loginResponse, nil)
                         //                }
@@ -214,7 +218,7 @@ class RequestBuilder {
         
     }
     
-    func buildRequestForTimetableWithParams(params: [String: AnyObject]?, completionHandler: @escaping (_ success:Bool, _ response: [HomeworkDetails]?,_ error: NSError?) -> ()) {
+    func buildRequestForTimetableWithParams(params: [String: AnyObject]?, completionHandler: @escaping (_ success:Bool, _ response: [DayDomain]?,_ error: NSError?) -> ()) {
         
         reachability.whenReachable = { reachability in
             // this is called on a background thread, but UI updates must
@@ -227,7 +231,7 @@ class RequestBuilder {
                 ServiceManagerClass().initiateRequest(url: (BASE_URL + TIMETABLE_URL), requestType: .post, headers: nil, queryParams: nil, params: params, completionHandler: {
                     (success, response, error) in
                     if success {
-                        let eventResponse = ResponseParser.parseHomeworksResponse(jsonData: response)
+                        let eventResponse = ResponseParser.parseTimeTableResponse(jsonData: response)
                         //if loginResponse?.statusCode == "1" {
                         completionHandler(true,eventResponse, error)
                         //                } else {

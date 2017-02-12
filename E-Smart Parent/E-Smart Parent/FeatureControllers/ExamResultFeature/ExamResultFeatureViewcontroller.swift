@@ -28,7 +28,7 @@ extension ExamResultFeatureViewcontroller : UITableViewDataSource{
         let lazyMapCollection = examResultDict?.keys
         examCategoryCell?.layer.borderWidth = 1.0
         examCategoryCell?.layer.borderColor = UIColor.lightGray.cgColor
-        examCategoryCell?.layer.cornerRadius = 10.0
+        examCategoryCell?.layer.cornerRadius = 5.0
         examCategoryCell?.tintColor = UIColor.black
         let categoryArray = Array(lazyMapCollection!)
         examCategoryCell?.textLabel?.text = categoryArray[indexPath.row]
@@ -47,5 +47,21 @@ extension ExamResultFeatureViewcontroller : UITableViewDelegate{
         let examResultBarGraph = self.storyBoard.instantiateViewController(withIdentifier: "examResultBarGraph") as! ExamResltBarGraphController
         examResultBarGraph.examResults = self.selectedCategory
         self.navigationController?.pushViewController(examResultBarGraph, animated: true)
+    }
+}
+
+extension UITableViewCell{
+    override open var frame: CGRect {
+        get {
+            return super.frame
+        }
+        set (newFrame) {
+            var frame = newFrame
+            frame.origin.x += 10
+            frame.origin.y += 10
+            frame.size.width -= 20
+            frame.size.height -= 10
+            super.frame = frame
+        }
     }
 }

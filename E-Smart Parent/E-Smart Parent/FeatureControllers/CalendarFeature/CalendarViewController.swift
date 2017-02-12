@@ -20,7 +20,7 @@ class CalendarViewController: UIViewController,CKCalendarViewDataSource,CKCalend
     override func viewDidLoad() {
         super.viewDidLoad()
         let calendar : CKCalendarView = CKCalendarView()
-        
+        calendar
         calendar.delegate = self
         calendar.dataSource = self
         self.view .addSubview(calendar)
@@ -33,15 +33,6 @@ class CalendarViewController: UIViewController,CKCalendarViewDataSource,CKCalend
     func creteCalendarEvents() {
         for dictionaryItem in eventsArray {
             let event : CKCalendarEvent = CKCalendarEvent(title: dictionaryItem.itemName, andDate: dictionaryItem.targetDate, andInfo: nil)
-            //
-            //  Step 2 : Add the events to the cache array
-            //
-            //self.data[dictionaryItem.targetDate] = [event]
-            
-//            if self.data.allKeys.contains(where: <#T##(Any) throws -> Bool#>) {
-//                <#code#>
-//            }
-            
             if let val = data[dictionaryItem.targetDate] {
                 let dateArray = val as! NSArray
                 dateArray.adding(event)

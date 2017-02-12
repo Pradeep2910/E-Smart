@@ -19,8 +19,10 @@ class LoginViewController : UIViewController,ServiceManagerDelegate{
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
+        self.navigationItem.hidesBackButton = true
+
         schoolTextField.text = "S0001"
-        userIdTextField.text = "S000100019"
+        userIdTextField.text = "S000100001"
         passwordTextField.text = "1992-05-02"
     }
     @IBAction func loginTapped(_ sender: Any) {
@@ -74,6 +76,19 @@ class LoginViewController : UIViewController,ServiceManagerDelegate{
         self.performSegue(withIdentifier: "moveToHomeScreen", sender: self)
          }
          } else {
+            if response != nil {
+                self.loginActIndicator.stopAnimating()
+                self.loginActIndicator.isHidden = true
+                guard let responseMessage = response?.loginResponse else {
+                    return
+                }
+                
+                let alert = UIAlertController(title: "Alert", message:responseMessage, preferredStyle: UIAlertControllerStyle.alert)
+                    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+            }
+            else{
          self.loginActIndicator.stopAnimating()
          self.loginActIndicator.isHidden = true
             if error?.domain != "Not Reachable"{
@@ -86,6 +101,7 @@ class LoginViewController : UIViewController,ServiceManagerDelegate{
             }
             else{
                 self.notReachable()
+            }
             }
          }
          })

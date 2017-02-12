@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [END register_for_notifications]
         
        FIRApp.configure()
-        
+       
         // Add observer for InstanceID token refresh callback.
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.tokenRefreshNotification),

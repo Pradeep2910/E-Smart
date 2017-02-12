@@ -22,7 +22,9 @@ class ResponseParser {
                 return loginDetails
             }
             else{
-                return nil
+                let loginDetails = LoginDetails()
+                loginDetails.loginResponse = jsonData?["response"] as! String?
+                return loginDetails
             }
             
         }
@@ -248,6 +250,60 @@ class ResponseParser {
         }
     }
 
+
+    
+    class func parseTimeTableResponse (jsonData: NSDictionary?) -> [DayDomain]? {
+        if jsonData != nil {
+            let response = jsonData?["data"]! as! String
+            guard let responseDictArray = response.parseJSONString as? NSArray
+                else {
+                    return nil
+            }
+            let subjectArray = responseDictArray.lastObject as!Dictionary<String, Any>
+            let subjectArrayString = subjectArray["timetable"] as! String
+            guard let subjectDictArray = subjectArrayString.parseJSONString as? NSArray else {
+                return nil
+            }
+            var periodDomainArray =  [PeriodDomain]()
+            var dayDomainArray = [DayDomain]()
+            if (subjectDictArray.count) > 0 {
+               if let periodArray = subjectDictArray[0] as? Array<Dictionary<String, Any>>
+               {
+                for (index, periodDict) in periodArray.enumerated() {
+                    if let title = periodDict["title"] as? String, let startTime = periodDict["from"] as? String, let endTime = periodDict["to"] as? String{
+                        let periodDomain = PeriodDomain(title: title, periodIndex: index, startTime: startTime, endTime: endTime)
+                        periodDomainArray.append(periodDomain)
+                    }
+                }
+                }
+                
+                for (index, arrayOfStrings) in subjectDictArray.enumerated() {
+                    if index > 0 {
+                        if let arrayOfPeriods = arrayOfStrings as? Array<String>
+                        {
+                            if arrayOfPeriods[0] != "Saturday" && arrayOfPeriods[0] != "Sunday" {
+                                let periodDomainArrayCopy = periodDomainArray.map{ $0.copy() }
+                                for (index, periodDomain) in periodDomainArrayCopy.enumerated(){
+                                    periodDomain.subject = arrayOfPeriods[index + 1]
+                                }
+                                let dayDomain = DayDomain(dayTitle: arrayOfPeriods[0], periodsArray: periodDomainArrayCopy)
+                                dayDomainArray.append(dayDomain)
+                            }
+                        }
+                    }
+                }
+                
+                
+                return dayDomainArray
+                
+            }
+            return nil
+        }
+        else
+        {
+            return nil
+        }
+    }
 
 
 }

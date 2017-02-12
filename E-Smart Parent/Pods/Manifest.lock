@@ -35,8 +35,8 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.0)
   - GoogleToolboxForMac/NSData+zlib (2.1.0):
     - GoogleToolboxForMac/Defines (= 2.1.0)
+  - JTAppleCalendar (6.1.1)
   - MBCalendarKit (3.0.4)
-  - PDTSimpleCalendar (0.9.1)
   - Realm (1.1.0):
     - Realm/Headers (= 1.1.0)
   - Realm/Headers (1.1.0)
@@ -50,8 +50,8 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
   - FontAwesome.swift
+  - JTAppleCalendar (~> 6.0)
   - MBCalendarKit
-  - PDTSimpleCalendar (~> 0.9.1)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -66,12 +66,12 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  JTAppleCalendar: fc53eb29ec81f8a90969e2d214b3aa610ab4e5b3
   MBCalendarKit: 2a3a60f902162a03bb4957966a4b795af998211f
-  PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
   Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
   RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: dfd8e673ea3dbf2d6b23bc96d8b1db99e4b7dcc4
+PODFILE CHECKSUM: 1552c3120bdee948b026b38833d3f091d64a88c2
 
 COCOAPODS: 1.1.1
