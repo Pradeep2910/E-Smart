@@ -21,7 +21,7 @@ extension ExamResultFeatureViewcontroller : UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return examResultDict!.keys.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let examCategoryCell = tableView.dequeueReusableCell(withIdentifier: "categoryCell")

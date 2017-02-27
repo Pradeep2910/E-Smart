@@ -77,6 +77,8 @@ extension ContactsTableviewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath)
+         cell.textLabel?.font = UIFont(name: "Arial", size: 14.0)
+        cell.detailTextLabel?.font = UIFont(name: "Arial", size: 16.0)
         let contact: ContactDetails
         if searchController.isActive && searchController.searchBar.text != "" {
             contact = filteredContacts[indexPath.row]

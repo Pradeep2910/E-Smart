@@ -57,6 +57,7 @@ class AttendanceHistoryViewController: UIViewController {
         calendarView.visibleDates { (visibleDates: DateSegmentInfo) in
             self.setupViewsOfCalendar(from: visibleDates)
         }
+        calendarView.scrollToDate(NSDate() as Date)
     }
     
     

@@ -14,6 +14,7 @@ class ExamResltBarGraphController: UIViewController {
     var examResults = [ExamResultDetails]()
     var subjectsArray = [String]()
     var marksArray = [Double]()
+    var finalColors : NSMutableArray = []
     let gradeColors = [NSUIColor(cgColor: UIColor(hexString: "#673AB7").cgColor),
                        NSUIColor(cgColor: UIColor(hexString: "#3F51B5").cgColor),
                        NSUIColor(cgColor: UIColor(hexString: "#2ecc71").cgColor),
@@ -53,7 +54,9 @@ class ExamResltBarGraphController: UIViewController {
         formato.subjects = subjectsArray
         let xaxis:XAxis = XAxis()
         for i in 0..<dataPoints.count {
-            
+            let iVal = Int(values[i])
+            let q = iVal/10
+            finalColors.add(gradeColors[9-q])
             let dataEntry = BarChartDataEntry(x: Double(i), y: values[i], data: subjectsArray[i] as AnyObject?)
             dataEntries.append(dataEntry)
             formato.stringForValue(Double(i), axis: xaxis)
@@ -113,13 +116,13 @@ class ExamResltBarGraphController: UIViewController {
         if barChartView.data != nil && (barChartView.data?.dataSetCount)! > 0 {
             set = barChartView.data?.getDataSetByIndex(0) as! BarChartDataSet
             set.values = dataEntries
-            set.colors = gradeColors
+            set.colors = (finalColors as? [NSUIColor])!
             barChartView.data?.notifyDataChanged()
             barChartView.notifyDataSetChanged()
         }
         else{
             set = BarChartDataSet(values: dataEntries, label: "Grades")
-            set.colors = gradeColors
+            set.colors = (finalColors as? [NSUIColor])!
             let chartData = BarChartData(dataSets: [set])
             chartData.barWidth = 0.9
             barChartView.data = chartData
