@@ -8,7 +8,7 @@
 			<key>itemName</key>
 			<string>Messages</string>
 			<key>imageName</key>
-			<string>fa-calendar</string>
+			<string>fa-comments</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -23,7 +23,7 @@
 			<key>itemName</key>
 			<string>Attendance</string>
 			<key>imageName</key>
-			<string>fa-calendar</string>
+			<string>fa-check-square-o</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -113,7 +113,7 @@
 			<key>itemName</key>
 			<string>Exam Results</string>
 			<key>imageName</key>
-			<string>fa-calendar</string>
+			<string>fa-graduation-cap</string>
 			<key>RGBValue</key>
 			<dict>
 				<key>R</key>
@@ -149,6 +149,74 @@
 		<dict>
 			<key>itemName</key>
 			<string>About</string>
+		</dict>
+	</array>
+	<key>attendanceHistory</key>
+	<array>
+		<dict>
+			<key>labelName</key>
+			<string>Total Working Days</string>
+			<key>RGBValue</key>
+			<dict>
+				<key>R</key>
+				<integer>255</integer>
+				<key>G</key>
+				<integer>255</integer>
+				<key>B</key>
+				<integer>255</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>labelName</key>
+			<string>No. of Days Present</string>
+			<key>RGBValue</key>
+			<dict>
+				<key>R</key>
+				<integer>255</integer>
+				<key>G</key>
+				<integer>255</integer>
+				<key>B</key>
+				<integer>255</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>labelName</key>
+			<string>Present</string>
+			<key>RGBValue</key>
+			<dict>
+				<key>R</key>
+				<integer>80</integer>
+				<key>G</key>
+				<integer>174</integer>
+				<key>B</key>
+				<integer>85</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>labelName</key>
+			<string>Half Day</string>
+			<key>RGBValue</key>
+			<dict>
+				<key>R</key>
+				<integer>246</integer>
+				<key>G</key>
+				<integer>240</integer>
+				<key>B</key>
+				<integer>38</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>labelName</key>
+			<string>Absent</string>
+			<key>RGBValue</key>
+			<dict>
+				<key>R</key>
+				<integer>241</integer>
+				<key>G</key>
+				<integer>11</integer>
+				<key>B</key>
+				<integer>26</integer>
+			</dict>
 		</dict>
 	</array>
 </dict>

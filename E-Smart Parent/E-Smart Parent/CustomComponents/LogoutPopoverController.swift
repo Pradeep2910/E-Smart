@@ -15,6 +15,10 @@ protocol logoutDelegate {
 class LogoutPopoverController: UIViewController {
     var logoutDelegate : logoutDelegate? = nil
     @IBAction func logoutTapped(_ sender: Any) {
+        Application.application.loginDetails.isLoggedOut = true
+        let appService = ApplicationService()
+        appService.updateLoginStatus()
+        
         logoutDelegate?.logoutFunction()
     }
 }

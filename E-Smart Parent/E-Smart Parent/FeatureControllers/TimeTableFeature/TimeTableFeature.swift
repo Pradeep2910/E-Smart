@@ -11,7 +11,11 @@ import UIKit
 class TimeTableFeature: UIViewController {
     var dayDomainArray = [DayDomain]()
      @IBOutlet var timeTableCollectionview : UICollectionView?
-    
+    override func viewDidLoad() {
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Time Table"
+
+    }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         self.view.layoutIfNeeded()

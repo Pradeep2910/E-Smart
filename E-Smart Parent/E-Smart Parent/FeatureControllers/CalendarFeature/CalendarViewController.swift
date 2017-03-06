@@ -19,6 +19,10 @@ class CalendarViewController: UIViewController,CKCalendarViewDataSource,CKCalend
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Calendar"
+
+         self.automaticallyAdjustsScrollViewInsets = false
         let calendar : CKCalendarView = CKCalendarView()
         calendar.delegate = self
         calendar.dataSource = self

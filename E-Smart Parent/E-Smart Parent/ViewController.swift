@@ -25,6 +25,18 @@ class ViewController: UIViewController {
     @IBOutlet var activityView : UIActivityIndicatorView?
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.automaticallyAdjustsScrollViewInsets = false
+        loginDetails.isLoggedOut = false
+        let appService = ApplicationService()
+        
+        if appService.getLoginDetails() == nil{
+          Application.application.loginDetails = loginDetails
+            appService.insertLoginDetailsToDB()
+        }
+        else{
+            Application.application.loginDetails = loginDetails
+            appService.updateLoginDetails()
+        }
         let logoutImage = UIImage.fontAwesomeIcon(name: String.fontAwesome(code: "fa-ellipsis-v")!, textColor: UIColor.white  , size: CGSize(width: 30, height: 30))
         
         let logoutButton = UIButton(type: .custom)
@@ -55,7 +67,10 @@ class ViewController: UIViewController {
          self.navigationItem.hidesBackButton = true
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "conversationList" {
             let conversationList = self.storyBoard.instantiateViewController(withIdentifier: "conversationList") as! ConversationListViewcontroller
@@ -572,7 +587,6 @@ func makeEventsRequest() {
                     }
                     let conversationList = self.storyBoard.instantiateViewController(withIdentifier: "conversationList") as! ConversationListViewcontroller
                     conversationList.conversationLists = self.conversationArray
-                    conversationList.loginDetails = self.loginDetails
                     self.navigationController?.pushViewController(conversationList, animated: true)
 
                 }

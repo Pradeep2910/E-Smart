@@ -15,15 +15,25 @@ class LoginViewController : UIViewController,ServiceManagerDelegate{
     var loginDetails = LoginDetails()
     @IBOutlet weak var userIdTextField: UITextField!
     @IBOutlet weak var loginActIndicator: UIActivityIndicatorView!
-
+@IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    var keyboardHeight: Float = 0.0
+    var currentFocusedTextField: UITextField!
     override func viewDidLoad() {
         self.navigationItem.hidesBackButton = true
 
         schoolTextField.text = "S0001"
         userIdTextField.text = "S000100001"
         passwordTextField.text = "1992-05-02"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
     }
     @IBAction func loginTapped(_ sender: Any) {
         
@@ -123,3 +133,72 @@ class LoginViewController : UIViewController,ServiceManagerDelegate{
         self.present(alert, animated: true, completion: nil)
     }
 }
+
+//MARK: - textfield delegate methods
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case userIdTextField:
+            userIdTextField.becomeFirstResponder()
+        case passwordTextField:
+            passwordTextField.becomeFirstResponder()
+        case schoolTextField:
+            schoolTextField.becomeFirstResponder()
+        default:
+            textField.resignFirstResponder()
+        }
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        switch textField {
+        case schoolTextField,
+             userIdTextField,
+             passwordTextField:
+            currentFocusedTextField = textField
+            if keyboardHeight > 0 {
+                self.scrollToMakeTextFieldVisible(currentFocusedTextField)
+            }
+        default:
+            return
+        }
+    }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        switch textField {
+        case schoolTextField,
+             userIdTextField,
+             passwordTextField:
+            loginScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        default:
+            break
+        }
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            keyboardHeight = Float(keyboardSize.height)
+            if currentFocusedTextField != nil {
+                self.scrollToMakeTextFieldVisible(currentFocusedTextField)
+            }
+        }
+    }
+    
+    func scrollToMakeTextFieldVisible(_ textField: UITextField) {
+        switch textField {
+        case schoolTextField,
+             userIdTextField,
+             passwordTextField:
+            let textFieldHeight = textField.frame.size.height
+            let expectedTextFieldFrame = Float(textFieldHeight + textField.frame.origin.y + 80.0)
+            if expectedTextFieldFrame > keyboardHeight {
+                loginScrollView.setContentOffset(CGPoint(x: 0, y: CGFloat(expectedTextFieldFrame - keyboardHeight)), animated: true)
+            }
+        default:
+            return
+        }
+    }
+}
+

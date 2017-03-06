@@ -29,6 +29,7 @@ class AttendanceHistoryViewController: UIViewController {
     var testCalendar = Calendar.autoupdatingCurrent
     var monthDelegate : monthChangeDelegate? = nil
     var requiredColor : UIColor = UIColor.white
+    var isToday : Bool = false
     var statusDictArray : [Dictionary<String, Any>] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,10 +55,12 @@ class AttendanceHistoryViewController: UIViewController {
         
         calendarView.cellInset = CGPoint(x: 0, y: 0)
         
-        calendarView.visibleDates { (visibleDates: DateSegmentInfo) in
+       
+        calendarView.scrollToDate(NSDate() as Date){
+        self.calendarView.visibleDates { (visibleDates: DateSegmentInfo) in
             self.setupViewsOfCalendar(from: visibleDates)
         }
-        calendarView.scrollToDate(NSDate() as Date)
+        }
     }
     
     
@@ -121,9 +124,9 @@ class AttendanceHistoryViewController: UIViewController {
                         case 0:
                             return UIColor.red
                         case 1:
-                            return UIColor.green
-                        case 2:
                             return UIColor(colorLiteralRed: 255.0, green: 255.0, blue: 0.0, alpha: 1.0)
+                        case 2:
+                            return UIColor.green
                         default:
                             return UIColor.white
                         }
@@ -148,10 +151,16 @@ class AttendanceHistoryViewController: UIViewController {
         }
         
         if cellState.isSelected {
-            myCustomCell.dayLabel.textColor = white
+            myCustomCell.dayLabel.textColor = UIColor.black
         } else {
+            
             if cellState.dateBelongsTo == .thisMonth {
+                if isToday {
+                myCustomCell.dayLabel.textColor = UIColor.blue
+                }
+                else{
                 myCustomCell.dayLabel.textColor = black
+                }
             } else {
                 myCustomCell.dayLabel.textColor = gray
             }
@@ -189,6 +198,21 @@ class AttendanceHistoryViewController: UIViewController {
     }
     
     
+    func checkForToday(_date: Date) -> Bool{
+        let localeStr = "us"
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: localeStr)
+        formatter.dateFormat = "yyyy-dd-MM"
+        let currentDate = formatter.string(from: Date())
+        let dateString = formatter.string(from: _date)
+        
+        guard (currentDate == dateString ) else {
+            return false
+        }
+        return true
+    
+    }
+    
     
 }
 
@@ -211,23 +235,29 @@ extension AttendanceHistoryViewController: JTAppleCalendarViewDelegate, JTAppleC
     func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
         let myCustomCell = cell as! CellView
         myCustomCell.dayLabel.text = cellState.text
-        
+        if self.checkForToday(_date: date) {
+            isToday = true
+            
+        }
+        else{
+            isToday = false
         myCustomCell.backgroundColor = self.checkinfColor(_date: date)
+        }
         if self.checkingForMonth(_date: date) {
             monthDelegate?.monthChanged(_statusDictArray: statusDictArray)
             statusDictArray.removeAll()
         }
-        //        handleCellSelection(view: cell, cellState: cellState)
+                handleCellSelection(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
-        //        handleCellSelection(view: cell, cellState: cellState)
+                handleCellSelection(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
-        //        handleCellSelection(view: cell, cellState: cellState)
+                handleCellSelection(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
     }
     

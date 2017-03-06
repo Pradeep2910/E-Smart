@@ -13,8 +13,10 @@ class ConversationList {
     var messageID: String!
     var fromUserRole: String!
     var fromUserID: String!
+    var fromUserName: String!
     var toUserRole: String!
     var toUserID: String!
+    var toUserName: String!
     var messageContent: String!
     var messageDate: String!
     init?(jsonString:Dictionary<String, Any>) {
@@ -41,10 +43,20 @@ class ConversationList {
         }else{
             self.fromUserID = ""
         }
+        if let fromUName = jsonString["from_user_name"] as? String{
+            self.fromUserName = fromUName
+        }else{
+            self.fromUserName = ""
+        }
         if let toURole = jsonString["to_user_role"] as? String {
             self.toUserRole = toURole
         }else{
             self.toUserRole = ""
+        }
+        if let toUName = jsonString["to_user_name"] as? String{
+            self.toUserName = toUName
+        }else{
+            self.toUserName = ""
         }
         if let uID = jsonString["to_user_id"] as? String {
             self.toUserID = uID

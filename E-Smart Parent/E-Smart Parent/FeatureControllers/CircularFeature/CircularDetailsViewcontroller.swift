@@ -16,7 +16,8 @@ class CircularDetailsViewcontroller: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var circularDescription: UILabel!
     @IBOutlet weak var circularTitle: UILabel!
-    
+     @IBOutlet weak var attachmentButton: UIButton!
+
     @IBAction func attachmentButtonTapped(_ sender: Any) {
     }
     
@@ -28,7 +29,9 @@ class CircularDetailsViewcontroller: UIViewController {
         return stringDate
     }
     override func viewDidLoad() {
-        
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Circular Details"
+        attachmentButton.setImage(UIImage.fontAwesomeIcon(name: String.fontAwesome(code: "fa-download")!, textColor: UIColor.white  , size: CGSize(width: 20, height: 20)), for: .normal)
         self.circularTitle.text = self.selectedCircular.itemName
         self.circularDescription.text = self.selectedCircular.itemDescription
         self.dateLabel.text = self.stringFromDate(_date: self.selectedCircular.targetDate)

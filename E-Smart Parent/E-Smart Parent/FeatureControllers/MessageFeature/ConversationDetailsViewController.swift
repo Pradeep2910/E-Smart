@@ -21,11 +21,13 @@ class ConversationDetailsViewController: UIViewController {
     var selectedContact = ContactDetails()
 
     var selectedUserID = ""
+    var selectedUserName = ""
     var viewHasAppeared = false
     var selectedUserRole = ""
     @IBOutlet weak var viewBottomConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
-        
+        loginDetails = Application.application.loginDetails
+        self.navigationItem.title = self.selectedUserName
         self.messageview.layer.borderWidth = 1.0
         self.messageview.layer.borderColor = UIColor.lightGray.cgColor
         self.messageview.layer.cornerRadius = 2.0
@@ -131,7 +133,7 @@ extension ConversationDetailsViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let conversation = conversationMessages[indexPath.row]
         var identifier = ""
-        if conversation.fromUserID == "S000100001" {
+        if conversation.fromUserID == loginDetails.studendID {
             identifier = "toUserCell"
         }
         else{
@@ -140,7 +142,14 @@ extension ConversationDetailsViewController:UITableViewDataSource{
         let conversationDetailCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! ConversationDetailTableviewCell
        
         conversationDetailCell.messageLabel.text = conversation.messageContent
-        conversationDetailCell.dateLabel.text = conversation.messageDate;
+        
+        if identifier == "toUserCell" {
+            conversationDetailCell.dateLabel.text = loginDetails.studentName.appending(", ").appending(conversation.messageDate)
+        }
+        else{
+            conversationDetailCell.dateLabel.text = selectedUserName.appending(", ").appending(conversation.messageDate)
+        }
+        
         
        conversationDetailCell.messageLabel.layer.cornerRadius = 4
         conversationDetailCell.messageLabel.clipsToBounds = true
@@ -193,8 +202,8 @@ extension ConversationDetailsViewController: UITextViewDelegate{
 extension ConversationDetailsViewController{
     func sendMessageAPI(){
         var jsonParams: [String : AnyObject] = [String : AnyObject]()
-        jsonParams["schoolId"] = "S0001" as AnyObject?
-        jsonParams["fromUserId"] = "S000100001" as AnyObject?
+        jsonParams["schoolId"] = loginDetails.schoolID as AnyObject?
+        jsonParams["fromUserId"] = loginDetails.studendID as AnyObject?
         jsonParams["fromUserRole"] = "S" as AnyObject?
         jsonParams["toUserId"] = self.selectedUserID as AnyObject?
         jsonParams["toUserRole"] = self.selectedUserRole as AnyObject?

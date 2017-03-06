@@ -15,6 +15,12 @@ class ConversationListViewcontroller: UIViewController {
     let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
     var selectedConversation = ConversationList()
     
+    override func viewDidLoad() {
+         self.automaticallyAdjustsScrollViewInsets = false
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Conversations"
+        loginDetails = Application.application.loginDetails
+    }
     
     
     func notReachable() {
@@ -25,15 +31,7 @@ class ConversationListViewcontroller: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
- 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showContacts" {
-            let contacts:ContactsTableviewController = segue.destination as! ContactsTableviewController
-            
-            contacts.loginDetails = self.loginDetails
-            
-        }
-    }
+
     
 
 
@@ -50,7 +48,7 @@ extension ConversationListViewcontroller:UITableViewDataSource{
         let conversationListCell = tableView.dequeueReusableCell(withIdentifier: "conversationListCell", for: indexPath) as! ConversationListTableviewCell
         let conversation = conversationLists[indexPath.row]
         conversationListCell.messageContent.text = conversation.messageContent
-        conversationListCell.toUserId.text = conversation.toUserID
+        conversationListCell.toUserId.text = conversation.toUserName
         conversationListCell.messageDate.text = conversation.messageDate;
         
         conversationListCell.messageCount.layer.cornerRadius = 12.5
@@ -65,6 +63,7 @@ extension ConversationListViewcontroller: UITableViewDelegate{
         let conversationDetails = self.storyBoard.instantiateViewController(withIdentifier: "conversationHistory") as! ConversationDetailsViewController
         conversationDetails.selectedConversation = self.selectedConversation
         conversationDetails.selectedUserID = self.selectedConversation.toUserID
+        conversationDetails.selectedUserName = self.selectedConversation.toUserName
         conversationDetails.selectedUserRole = self.selectedConversation.toUserRole
         self.navigationController?.pushViewController(conversationDetails, animated: true)
         

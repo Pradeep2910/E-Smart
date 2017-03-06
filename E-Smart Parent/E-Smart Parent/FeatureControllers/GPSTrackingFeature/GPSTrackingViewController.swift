@@ -19,6 +19,9 @@ class GPSTrackingViewController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Tracking"
+
         self.navigationController?.navigationItem.hidesBackButton = false
         if (CLLocationManager.locationServicesEnabled())
         {

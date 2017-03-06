@@ -447,7 +447,7 @@ class RequestBuilder {
                     if success {
                         let eventResponse = ResponseParser.parseConversationHistoryAndMessageResponse(jsonData: response)
                         //if loginResponse?.statusCode == "1" {
-                        completionHandler(true,eventResponse!, error)
+                        completionHandler(true,eventResponse, error)
                         //                } else {
                         //                    completionHandler(false,loginResponse, nil)
                         //                }
@@ -489,7 +489,7 @@ class RequestBuilder {
                     if success {
                         let eventResponse = ResponseParser.parseGetContactsResponse(jsonData: response)
                         //if loginResponse?.statusCode == "1" {
-                        completionHandler(true,eventResponse!, error)
+                        completionHandler(true,eventResponse, error)
                         //                } else {
                         //                    completionHandler(false,loginResponse, nil)
                         //                }

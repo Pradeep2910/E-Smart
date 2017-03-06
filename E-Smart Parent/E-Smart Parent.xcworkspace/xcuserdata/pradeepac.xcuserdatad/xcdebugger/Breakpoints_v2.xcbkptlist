@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/CalendarFeature/CalendarViewController.swift"
-            timestampString = "505562690.587482"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/AppDelegate.swift"
-            timestampString = "509811021.410014"
+            timestampString = "510302882.954182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "application(_:didRegisterForRemoteNotificationsWithDeviceToken:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "loginTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -86,7 +86,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ManagerClass/ServiceManager/ServiceManagerClass.swift"
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "makeLoginRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
             landmarkName = "makeEventsRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "makeLoginRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/CircularFeature/CircularFeatureViewController.swift"
-            timestampString = "506146996.469448"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/CircularFeature/CircularFeatureViewController.swift"
-            timestampString = "506756847.296459"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/CircularFeature/CircularDetailsViewcontroller.swift"
-            timestampString = "506464353.21245"
+            timestampString = "510389590.603995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "notReachable()"
             landmarkType = "7">
          </BreakpointContent>
@@ -342,7 +342,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ManagerClass/ServiceManager/ServiceManagerClass.swift"
@@ -355,14 +355,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "E_Smart_Parent.ServiceManagerClass.initiateRequest (url : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, requestType : Alamofire.HTTPMethod, headers : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, queryParams : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, params : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, completionHandler : (Swift.Bool, Swift.Optional&lt;__ObjC.NSDictionary&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/ServiceManagerClass.swift"
-                  timestampString = "509911322.517188"
+                  timestampString = "510221253.651733"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "126"
@@ -370,14 +370,14 @@
                   offsetFromSymbolStart = "3234">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "E_Smart_Parent.ServiceManagerClass.(initiateRequest (url : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, requestType : Alamofire.HTTPMethod, headers : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, queryParams : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, params : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, completionHandler : (Swift.Bool, Swift.Optional&lt;__ObjC.NSDictionary&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/ServiceManagerClass.swift"
-                  timestampString = "509911322.519282"
+                  timestampString = "510221253.654173"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "128"
@@ -426,7 +426,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/RequestBuilder.swift"
-                  timestampString = "509911322.523306"
+                  timestampString = "510390339.002559"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "140"
@@ -441,7 +441,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/RequestBuilder.swift"
-                  timestampString = "509911322.525171"
+                  timestampString = "510390339.004262"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "143"
@@ -618,11 +618,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/CalendarFeature/CalendarViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "creteCalendarEvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -634,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -650,11 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationListViewcontroller.swift"
-            timestampString = "506757613.226182"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -666,11 +666,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510303695.451071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -682,11 +682,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510303695.451071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -730,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "textViewDidBeginEditing(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -746,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "textViewDidEndEditing(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -762,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "textView(_:shouldChangeTextIn:replacementText:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -778,11 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "textView(_:shouldChangeTextIn:replacementText:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -794,11 +794,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510303695.451071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "sendMessageTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -810,11 +810,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "sendMessageAPI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -890,7 +890,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/RequestBuilder.swift"
-                  timestampString = "509911322.576145"
+                  timestampString = "510390339.052719"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "437"
@@ -905,7 +905,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/RequestBuilder.swift"
-                  timestampString = "509911322.578085"
+                  timestampString = "510390339.0556"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "440"
@@ -922,11 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510303695.451071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -938,11 +938,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ContactsTableviewController.swift"
-            timestampString = "506763887.351541"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "updateSearchResults(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -954,11 +954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510303695.451071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -970,11 +970,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "getConversationDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -986,11 +986,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510303695.451071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "viewDidLayoutSubviews()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1002,11 +1002,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506759962.448521"
+            timestampString = "510303695.451071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "scrollToBottom()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1018,11 +1018,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ContactsTableviewController.swift"
-            timestampString = "509909887.113955"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1034,11 +1034,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "506760117.228242"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "271"
-            endingLineNumber = "271"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
             landmarkName = "getConversationDetailsForContact()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1050,11 +1050,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "472"
-            endingLineNumber = "472"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
             landmarkName = "makeExamresultRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1082,11 +1082,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/ExamResultFeature/ExamResultFeatureViewcontroller.swift"
-            timestampString = "508590826.582674"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1114,7 +1114,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/ServiceManagerClass.swift"
-                  timestampString = "509911322.622519"
+                  timestampString = "510390339.098385"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "48"
@@ -1129,7 +1129,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/ServiceManagerClass.swift"
-                  timestampString = "509911322.624337"
+                  timestampString = "510390339.100638"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "49"
@@ -1234,11 +1234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceFeatureViewcontroller.swift"
-            timestampString = "508569034.532266"
+            timestampString = "510310931.867317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1250,11 +1250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "makeLoginRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1330,11 +1330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/AppDelegate.swift"
-            timestampString = "509909936.980169"
+            timestampString = "510302882.954182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "userNotificationCenter(_:willPresent:withCompletionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1346,11 +1346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/AppDelegate.swift"
-            timestampString = "509909936.980169"
+            timestampString = "510302882.954182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
             landmarkName = "applicationReceivedRemoteMessage(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1362,11 +1362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
-            timestampString = "507836276.694837"
+            timestampString = "510382306.303844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
             landmarkName = "getConversationDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1410,11 +1410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1426,11 +1426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
+            startingLineNumber = "287"
+            endingLineNumber = "287"
             landmarkName = "makeAttendanceHistoryRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1442,11 +1442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1506,11 +1506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceFeatureViewcontroller.swift"
-            timestampString = "508569034.532266"
+            timestampString = "510310931.867317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "monthChanged(_statusDictArray:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1522,11 +1522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "calendar(_:willDisplayCell:date:cellState:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1538,11 +1538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
             landmarkName = "calendar(_:sectionHeaderIdentifierFor:belongingTo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1554,11 +1554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
             landmarkName = "calendar(_:sectionHeaderSizeFor:belongingTo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1566,15 +1566,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
             landmarkName = "calendar(_:willDisplaySectionHeader:range:identifier:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1582,15 +1582,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "286"
-            endingLineNumber = "286"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
             landmarkName = "setupViewsOfCalendar(from:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1598,15 +1598,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "277"
-            endingLineNumber = "277"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
             landmarkName = "previousButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1618,11 +1618,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
             landmarkName = "nextButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1634,11 +1634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
-            timestampString = "509911321.178513"
+            timestampString = "510388574.462168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "calendar(_:willDisplayCell:date:cellState:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1666,7 +1666,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/RequestBuilder.swift"
-                  timestampString = "509911322.691403"
+                  timestampString = "510390339.15105"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "223"
@@ -1681,7 +1681,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ManagerClass/ServiceManager/RequestBuilder.swift"
-                  timestampString = "509911322.693735"
+                  timestampString = "510390339.15338"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "226"
@@ -1698,11 +1698,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508591037.92852"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "431"
-            endingLineNumber = "431"
+            startingLineNumber = "446"
+            endingLineNumber = "446"
             landmarkName = "makeTimetableRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1730,11 +1730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "makeLoginRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1746,11 +1746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "makeLoginRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1762,11 +1762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/CustomComponents/LogoutPopoverController.swift"
-            timestampString = "508588746.588761"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "logoutTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1778,11 +1778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
-            timestampString = "508589029.15819"
+            timestampString = "510337854.260045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "makeLoginRequest()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1810,7 +1810,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ResponseParser/ResponseParser.swift"
-                  timestampString = "509911322.724621"
+                  timestampString = "510390339.181367"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -1825,7 +1825,7 @@
                   moduleName = "E-Smart Parent"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ResponseParser/ResponseParser.swift"
-                  timestampString = "509911322.726329"
+                  timestampString = "510390339.18359"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -1842,11 +1842,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508588838.698109"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1858,11 +1858,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "508586336.515412"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1890,11 +1890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/AppDelegate.swift"
-            timestampString = "509909936.980169"
+            timestampString = "510302882.954182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
             landmarkName = "userNotificationCenter(_:didReceive:withCompletionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1906,12 +1906,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/ExamResultFeature/ExamResultBarGraphController.swift"
-            timestampString = "509908447.797472"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "setChart(dataPoints:values:)"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
+            landmarkName = "setSubjectWiseChart(dataPoints:values:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1922,11 +1922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ContactsTableviewController.swift"
-            timestampString = "509909887.113955"
+            timestampString = "510299539.017654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1938,12 +1938,348 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "E-Smart Parent/ViewController.swift"
-            timestampString = "509911436.498335"
+            timestampString = "510302534.936637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "356"
-            endingLineNumber = "356"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
             landmarkName = "makeCircularsRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ContactsTableviewController.swift"
+            timestampString = "510299539.017654"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ConversationDetailsViewController.swift"
+            timestampString = "510303695.451071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/ManagerClass/ServiceManager/RequestBuilder.swift"
+            timestampString = "510221442.997037"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "490"
+            endingLineNumber = "490"
+            landmarkName = "buildRequestGetContactsWithParams(params:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/ExamResultFeature/ExamResultBarGraphController.swift"
+            timestampString = "510299539.017654"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "swipeToPerformanceView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/ExamResultFeature/ExamResultBarGraphController.swift"
+            timestampString = "510299539.017654"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/AppDelegate.swift"
+            timestampString = "510294480.741752"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/DataController/ApplicationService.swift"
+            timestampString = "510248608.07816"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "getLoginDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/ViewController.swift"
+            timestampString = "510302534.936637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "viewWillDisappear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/CustomComponents/LogoutPopoverController.swift"
+            timestampString = "510302584.589841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "logoutTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/ViewController.swift"
+            timestampString = "510303159.045496"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "573"
+            endingLineNumber = "573"
+            landmarkName = "getConversationList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/ViewController.swift"
+            timestampString = "510303175.471043"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "579"
+            endingLineNumber = "579"
+            landmarkName = "getConversationList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "E_Smart_Parent.ViewController.getConversationList () -&gt; ()"
+                  moduleName = "E-Smart Parent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ViewController.swift"
+                  timestampString = "510390339.250251"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "579"
+                  endingLineNumber = "579"
+                  offsetFromSymbolStart = "1223">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "E_Smart_Parent.ViewController.(getConversationList () -&gt; ()).(closure #1)"
+                  moduleName = "E-Smart Parent"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pradeepac/Desktop/E-Smart%20App/E-Smart%20Parent/E-Smart%20Parent/ViewController.swift"
+                  timestampString = "510390339.252064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "581"
+                  endingLineNumber = "581"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/ResponseParser/ResponseParser.swift"
+            timestampString = "510303283.50295"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "parseConversationListResponse(jsonData:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/MessageFeature/ContactsTableviewController.swift"
+            timestampString = "510303801.637753"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "getContactsAPI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceFeatureViewcontroller.swift"
+            timestampString = "510310931.867317"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceFeatureViewcontroller.swift"
+            timestampString = "510310700.247867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "monthChanged(_statusDictArray:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/LoginViewController/LoginViewController.swift"
+            timestampString = "510337791.227013"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
+            timestampString = "510388574.462168"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "calendar(_:willDisplayCell:date:cellState:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/AttendanceHistoryFeature/AttendanceHistoryViewController.swift"
+            timestampString = "510388574.462168"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "calendar(_:willDisplayCell:date:cellState:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-Smart Parent/FeatureControllers/HomeworkFeature/HomeworkDetailsViewcontroller.swift"
+            timestampString = "510390394.554543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

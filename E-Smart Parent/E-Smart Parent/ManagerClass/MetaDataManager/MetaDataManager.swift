@@ -41,5 +41,19 @@ class MetaDataManager: NSObject {
         return mainDict["optionsArray"] as! NSArray
     }
     
+    func getAttendanceHistoryItems() -> NSArray{
+        var propertyListFormat = PropertyListSerialization.PropertyListFormat.xml
+        plistPath = Bundle.main.path(forResource:"AppMetaData", ofType: "plist")!
+        let plistXml = FileManager.default.contents(atPath: plistPath)!
+        do{
+            mainDict = try PropertyListSerialization.propertyList(from: plistXml, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String : AnyObject]
+        }
+        catch{
+            print("Error reading plist:\(error), format :\(propertyListFormat)")
+        }
+        return mainDict["attendanceHistory"] as! NSArray
+    }
+
+    
     
 }

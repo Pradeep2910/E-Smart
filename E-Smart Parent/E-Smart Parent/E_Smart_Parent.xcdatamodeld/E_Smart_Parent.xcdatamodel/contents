@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11758" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AdditionalDetailsEntity" representedClassName=".AdditionalDetailsEntity" syncable="YES">
+        <attribute name="admissionDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="admissionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthPlace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bloodGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fatherOccupation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fatherSalary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motherName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motherTounge" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="loginDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LoginDetailsEntity" inverseName="additionalDetails" inverseEntity="LoginDetailsEntity" syncable="YES"/>
+    </entity>
+    <entity name="LoginDetailsEntity" representedClassName=".LoginDetailsEntity" syncable="YES">
+        <attribute name="batchID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feesType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guardianName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLoggedOut" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="schoolID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sectionID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studendID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="additionalDetails" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="AdditionalDetailsEntity" inverseName="loginDetails" inverseEntity="AdditionalDetailsEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LoginDetailsEntity" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="AdditionalDetailsEntity" positionX="-54" positionY="81" width="128" height="255"/>
+    </elements>
 </model>

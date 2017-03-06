@@ -17,7 +17,9 @@ public class BarChartFormatter: NSObject, IAxisValueFormatter{
     
     
     public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        
+        if Int(value) >= subjects.count {
+            return ""
+        }
         return subjects[Int(value)]
 }
 }

@@ -19,6 +19,9 @@ class ContactsTableviewController: UITableViewController {
     // MARK: - View Setup
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Contacts"
+loginDetails = Application.application.loginDetails
         self.getContactsAPI()
         
         // Setup the Search Controller
@@ -102,7 +105,6 @@ extension ContactsTableviewController {
         let conversationDetails = self.storyBoard.instantiateViewController(withIdentifier: "conversationHistory") as! ConversationDetailsViewController
         conversationDetails.isFromContacts = true
         conversationDetails.selectedContact = self.selectedContact
-        conversationDetails.loginDetails = self.loginDetails
         conversationDetails.selectedUserID = self.selectedContact.userID
         conversationDetails.selectedUserRole = self.selectedContact.userRole
         self.navigationController?.pushViewController(conversationDetails, animated: true)

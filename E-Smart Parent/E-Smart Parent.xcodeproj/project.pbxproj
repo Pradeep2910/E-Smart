@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		21360AF91328CAA3AF0975C4 /* Pods_E_Smart_ParentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A55B882E7F2AEA337679BF /* Pods_E_Smart_ParentUITests.framework */; };
+		257FC2621E665DB000722515 /* LoginDetailsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FC25E1E665DB000722515 /* LoginDetailsEntity+CoreDataClass.swift */; };
+		257FC2631E665DB000722515 /* LoginDetailsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FC25F1E665DB000722515 /* LoginDetailsEntity+CoreDataProperties.swift */; };
+		257FC2641E665DB000722515 /* AdditionalDetailsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FC2601E665DB000722515 /* AdditionalDetailsEntity+CoreDataClass.swift */; };
+		257FC2651E665DB000722515 /* AdditionalDetailsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257FC2611E665DB000722515 /* AdditionalDetailsEntity+CoreDataProperties.swift */; };
 		259A280C1E2B3D9A00EE3233 /* HomeworkFeatureViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259A280B1E2B3D9A00EE3233 /* HomeworkFeatureViewcontroller.swift */; };
 		259A280F1E2B3DEA00EE3233 /* HomeworkTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259A280E1E2B3DEA00EE3233 /* HomeworkTableviewCell.swift */; };
 		259A28131E2B3E9F00EE3233 /* HomeworkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259A28121E2B3E9F00EE3233 /* HomeworkDetails.swift */; };
@@ -67,6 +71,12 @@
 		25E080DC1E3C690100CD49BF /* ChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E080DB1E3C690100CD49BF /* ChartFormatter.swift */; };
 		25E2E0A11E504E320019A262 /* LogoutPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E2E0A01E504E320019A262 /* LogoutPopoverController.swift */; };
 		25E924521E45DFCA00B58F14 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */; };
+		25EB33841E69577E00866F87 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB33831E69577E00866F87 /* Application.swift */; };
+		25EB33881E695D5200866F87 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB33871E695D5200866F87 /* DataController.swift */; };
+		25EB338B1E6981D800866F87 /* ExamScoreTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB338A1E6981D800866F87 /* ExamScoreTableviewCell.swift */; };
+		25EB338E1E69B8FF00866F87 /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB338D1E69B8FF00866F87 /* ApplicationService.swift */; };
+		25EB33901E6A789F00866F87 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB338F1E6A789F00866F87 /* CustomNavigationController.swift */; };
+		25EB33931E6AB0A700866F87 /* AttendanceFeatureTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB33921E6AB0A700866F87 /* AttendanceFeatureTableviewCell.swift */; };
 		43F2E3B2C6C6B1217AA83107 /* Pods_E_Smart_Parent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB74446A210ADBCBB7380F /* Pods_E_Smart_Parent.framework */; };
 		88AB0EC6F43FD4A108455747 /* Pods_E_Smart_ParentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7693FB1257DC2FCB0315F525 /* Pods_E_Smart_ParentTests.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +101,10 @@
 /* Begin PBXFileReference section */
 		07A55B882E7F2AEA337679BF /* Pods_E_Smart_ParentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Smart_ParentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB62F79AF873FDCECDFEB11 /* Pods-E-Smart Parent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Smart Parent.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-Smart Parent/Pods-E-Smart Parent.release.xcconfig"; sourceTree = "<group>"; };
+		257FC25E1E665DB000722515 /* LoginDetailsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginDetailsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		257FC25F1E665DB000722515 /* LoginDetailsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginDetailsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		257FC2601E665DB000722515 /* AdditionalDetailsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdditionalDetailsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		257FC2611E665DB000722515 /* AdditionalDetailsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdditionalDetailsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		259A280B1E2B3D9A00EE3233 /* HomeworkFeatureViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkFeatureViewcontroller.swift; sourceTree = "<group>"; };
 		259A280E1E2B3DEA00EE3233 /* HomeworkTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkTableviewCell.swift; sourceTree = "<group>"; };
 		259A28121E2B3E9F00EE3233 /* HomeworkDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkDetails.swift; sourceTree = "<group>"; };
@@ -157,6 +171,12 @@
 		25E080DB1E3C690100CD49BF /* ChartFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartFormatter.swift; sourceTree = "<group>"; };
 		25E2E0A01E504E320019A262 /* LogoutPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutPopoverController.swift; sourceTree = "<group>"; };
 		25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		25EB33831E69577E00866F87 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		25EB33871E695D5200866F87 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		25EB338A1E6981D800866F87 /* ExamScoreTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamScoreTableviewCell.swift; sourceTree = "<group>"; };
+		25EB338D1E69B8FF00866F87 /* ApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
+		25EB338F1E6A789F00866F87 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		25EB33921E6AB0A700866F87 /* AttendanceFeatureTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceFeatureTableviewCell.swift; sourceTree = "<group>"; };
 		2665957C02FA1EF3B8452116 /* Pods-E-Smart ParentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Smart ParentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-Smart ParentTests/Pods-E-Smart ParentTests.release.xcconfig"; sourceTree = "<group>"; };
 		38BECAC40255D3C246CFDF59 /* Pods-E-Smart ParentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Smart ParentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-Smart ParentUITests/Pods-E-Smart ParentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7693FB1257DC2FCB0315F525 /* Pods_E_Smart_ParentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Smart_ParentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +225,34 @@
 				E1359E0D126127504B3AA609 /* Pods-E-Smart ParentUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		257FC2531E65E16300722515 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				257FC2551E65E19400722515 /* EntityClasses */,
+				257FC2541E65E18D00722515 /* Model */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		257FC2541E65E18D00722515 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25B52DE91E2231D80092A29E /* E_Smart_Parent.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		257FC2551E65E19400722515 /* EntityClasses */ = {
+			isa = PBXGroup;
+			children = (
+				257FC25E1E665DB000722515 /* LoginDetailsEntity+CoreDataClass.swift */,
+				257FC25F1E665DB000722515 /* LoginDetailsEntity+CoreDataProperties.swift */,
+				257FC2601E665DB000722515 /* AdditionalDetailsEntity+CoreDataClass.swift */,
+				257FC2611E665DB000722515 /* AdditionalDetailsEntity+CoreDataProperties.swift */,
+			);
+			path = EntityClasses;
 			sourceTree = "<group>";
 		};
 		259A280A1E2B3D6000EE3233 /* HomeworkFeature */ = {
@@ -259,6 +307,7 @@
 				25D0FBC31E2A653400CD5419 /* TableviewCells */,
 				25A2239F1E22365A00174896 /* CollectionviewCells */,
 				25E2E0A01E504E320019A262 /* LogoutPopoverController.swift */,
+				25EB338F1E6A789F00866F87 /* CustomNavigationController.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -379,6 +428,8 @@
 		25B52DE11E2231D80092A29E /* E-Smart Parent */ = {
 			isa = PBXGroup;
 			children = (
+				25EB33851E695CF600866F87 /* DataController */,
+				257FC2531E65E16300722515 /* DataModel */,
 				25D0FBB51E2A18D600CD5419 /* ResponseParser */,
 				25D0FBB41E2A18CF00CD5419 /* Entities */,
 				25D0FBAF1E2A0CDF00CD5419 /* Utilities */,
@@ -395,7 +446,6 @@
 				25B52DEC1E2231D80092A29E /* Assets.xcassets */,
 				25B52DEE1E2231D80092A29E /* LaunchScreen.storyboard */,
 				25B52DF11E2231D80092A29E /* Info.plist */,
-				25B52DE91E2231D80092A29E /* E_Smart_Parent.xcdatamodeld */,
 			);
 			path = "E-Smart Parent";
 			sourceTree = "<group>";
@@ -467,6 +517,7 @@
 				25DD89241E34C08500B8FC4E /* ExamResultDetails.swift */,
 				25D32AA81E4F6C6F00FB1236 /* DayDomain.swift */,
 				25D32AAA1E4F6DA700FB1236 /* PeriodDomain.swift */,
+				25EB33831E69577E00866F87 /* Application.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -491,6 +542,8 @@
 		25D0FBC31E2A653400CD5419 /* TableviewCells */ = {
 			isa = PBXGroup;
 			children = (
+				25EB33911E6AB07D00866F87 /* AttendanceFeatureTableviewCell */,
+				25EB33891E69818900866F87 /* ExamScoreTableviewCell */,
 				25D50EB51E2FFBCF009AD075 /* ConversationDetailTableviewCell */,
 				25D50EB21E2FE088009AD075 /* ConversationListTableviewCell */,
 				259A280D1E2B3DAF00EE3233 /* HomeworkTableviewCell */,
@@ -583,6 +636,31 @@
 				25E924511E45DFCA00B58F14 /* fontawesome-webfont.ttf */,
 			);
 			path = FontAwesome;
+			sourceTree = "<group>";
+		};
+		25EB33851E695CF600866F87 /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				25EB33871E695D5200866F87 /* DataController.swift */,
+				25EB338D1E69B8FF00866F87 /* ApplicationService.swift */,
+			);
+			path = DataController;
+			sourceTree = "<group>";
+		};
+		25EB33891E69818900866F87 /* ExamScoreTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				25EB338A1E6981D800866F87 /* ExamScoreTableviewCell.swift */,
+			);
+			path = ExamScoreTableviewCell;
+			sourceTree = "<group>";
+		};
+		25EB33911E6AB07D00866F87 /* AttendanceFeatureTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				25EB33921E6AB0A700866F87 /* AttendanceFeatureTableviewCell.swift */,
+			);
+			path = AttendanceFeatureTableviewCell;
 			sourceTree = "<group>";
 		};
 		3506F1F8A9383840AA820E14 /* Frameworks */ = {
@@ -894,14 +972,19 @@
 				25D50EBC1E2FFE37009AD075 /* ConversationDetailsViewController.swift in Sources */,
 				25A2239E1E22363B00174896 /* GPSTrackingViewController.swift in Sources */,
 				25D50EB41E2FE0AE009AD075 /* ConversationListTableviewCell.swift in Sources */,
+				25EB33881E695D5200866F87 /* DataController.swift in Sources */,
 				25DD89231E34BFC500B8FC4E /* ExamResultBarGraphController.swift in Sources */,
+				257FC2641E665DB000722515 /* AdditionalDetailsEntity+CoreDataClass.swift in Sources */,
+				25EB33901E6A789F00866F87 /* CustomNavigationController.swift in Sources */,
 				25DD891D1E33DECC00B8FC4E /* ContactsTableviewController.swift in Sources */,
 				259A28131E2B3E9F00EE3233 /* HomeworkDetails.swift in Sources */,
 				25D32AAB1E4F6DA700FB1236 /* PeriodDomain.swift in Sources */,
 				25D32A9B1E4F2B0300FB1236 /* CalendarHeader.swift in Sources */,
 				25D32AA71E4F6B0D00FB1236 /* PeriodTitleCollectionCell.swift in Sources */,
+				25EB33931E6AB0A700866F87 /* AttendanceFeatureTableviewCell.swift in Sources */,
 				25D50EB11E2FD952009AD075 /* ConversationList.swift in Sources */,
 				25D0FBC61E2A65AF00CD5419 /* CircularTableviewCell.swift in Sources */,
+				257FC2651E665DB000722515 /* AdditionalDetailsEntity+CoreDataProperties.swift in Sources */,
 				25BFEA091E2D1E310022114E /* AdditionalDetails.swift in Sources */,
 				25D0FBB11E2A0D0900CD5419 /* APIConstants.swift in Sources */,
 				25D32AA91E4F6C6F00FB1236 /* DayDomain.swift in Sources */,
@@ -920,12 +1003,15 @@
 				25A2239A1E22362D00174896 /* AttendanceHistoryViewController.swift in Sources */,
 				25D2F87C1E2B2BCA00D9A9CE /* CircularDetailsViewcontroller.swift in Sources */,
 				25D50EB71E2FFBDF009AD075 /* ConversationDetailTableviewCell.swift in Sources */,
+				25EB338E1E69B8FF00866F87 /* ApplicationService.swift in Sources */,
 				25D50EBE1E300186009AD075 /* ConversationMessages.swift in Sources */,
 				25B52DE51E2231D80092A29E /* ViewController.swift in Sources */,
 				259A280F1E2B3DEA00EE3233 /* HomeworkTableviewCell.swift in Sources */,
+				25EB33841E69577E00866F87 /* Application.swift in Sources */,
 				25D50EAF1E2FD602009AD075 /* ConversationListViewcontroller.swift in Sources */,
 				25A223A81E2236BC00174896 /* ServiceManagerClass.swift in Sources */,
 				25D0FBB31E2A0E5A00CD5419 /* LoginResponseStruct.swift in Sources */,
+				25EB338B1E6981D800866F87 /* ExamScoreTableviewCell.swift in Sources */,
 				25D32AA31E4F6A8000FB1236 /* TimeTableHeaderCollectionCell.swift in Sources */,
 				25D0FBB91E2A192D00CD5419 /* ResponseParser.swift in Sources */,
 				25DD891B1E3372A700B8FC4E /* ContactDetails.swift in Sources */,
@@ -936,6 +1022,8 @@
 				25E080DC1E3C690100CD49BF /* ChartFormatter.swift in Sources */,
 				25B52DE31E2231D80092A29E /* AppDelegate.swift in Sources */,
 				25D0FBAC1E2A096000CD5419 /* LoginViewController.swift in Sources */,
+				257FC2621E665DB000722515 /* LoginDetailsEntity+CoreDataClass.swift in Sources */,
+				257FC2631E665DB000722515 /* LoginDetailsEntity+CoreDataProperties.swift in Sources */,
 				25E2E0A11E504E320019A262 /* LogoutPopoverController.swift in Sources */,
 				25D32A971E4F217600FB1236 /* CellView.swift in Sources */,
 			);
@@ -1223,7 +1311,8 @@
 				25B52DEA1E2231D80092A29E /* E_Smart_Parent.xcdatamodel */,
 			);
 			currentVersion = 25B52DEA1E2231D80092A29E /* E_Smart_Parent.xcdatamodel */;
-			path = E_Smart_Parent.xcdatamodeld;
+			name = E_Smart_Parent.xcdatamodeld;
+			path = ../../E_Smart_Parent.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

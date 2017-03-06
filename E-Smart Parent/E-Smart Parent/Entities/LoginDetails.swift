@@ -21,14 +21,14 @@ class LoginDetails {
     var dateOfBirth: String!
     var batchID: String!
     var feesType: String!
-    
+    var isLoggedOut : Bool!
     var additionalDetails : AdditionalDetails!
     
     var loginResponse  :String?
     init?(jsonString:Dictionary<String, Any>) {
         
       
-            
+            self.isLoggedOut = true
             if let studentId = jsonString["student_id"] as? String {
                 self.studendID = studentId
             }else{

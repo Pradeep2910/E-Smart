@@ -15,6 +15,9 @@ class HomeworkFeatureViewController: UIViewController {
     var homeworkDetail : HomeworkDetails = HomeworkDetails()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Homeworks"
+
         
     }
     

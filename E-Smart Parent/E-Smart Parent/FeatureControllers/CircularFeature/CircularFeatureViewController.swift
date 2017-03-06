@@ -15,6 +15,9 @@ class CircularFeatureViewController: UIViewController {
     var circularDetail : CircularDetails = CircularDetails()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Circulars"
+
         
     }
     

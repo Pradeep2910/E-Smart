@@ -13,7 +13,11 @@ class ExamResultFeatureViewcontroller: UIViewController {
     var examResultDict : Dictionary<String,[ExamResultDetails]>?
     var selectedCategory : [ExamResultDetails] = []
     let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+    override func viewDidLoad() {
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.title = "Exam Results"
 
+    }
 }
 
 extension ExamResultFeatureViewcontroller : UITableViewDataSource{

@@ -50,6 +50,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                selector: #selector(self.tokenRefreshNotification),
                                                name: .firInstanceIDTokenRefresh,
                                                object: nil)
+        let appService = ApplicationService()
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.makeKeyAndVisible()
+        guard let loginDetails = appService.getLoginDetails() else {
+            let loginVC = mainStoryboard.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+            let nav = CustomNavigationController(rootViewController: loginVC)
+            nav.configure()
+            self.window!.rootViewController = nav
+            return true
+        }
+                if !(loginDetails.isLoggedOut)! {
+            
+            
+            let homeViewController = mainStoryboard.instantiateViewController(withIdentifier: "dashboard") as! ViewController
+                    homeViewController.loginDetails = loginDetails
+            let nav = CustomNavigationController(rootViewController: homeViewController)
+                    nav.configure()
+
+            self.window!.rootViewController = nav
+        }
+                else{
+                    let loginVC = mainStoryboard.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+                    let nav = CustomNavigationController(rootViewController: loginVC)
+                    nav.configure()
+                    self.window!.rootViewController = nav
+                    return true
+
+                    
+        }
         
         return true
     }
